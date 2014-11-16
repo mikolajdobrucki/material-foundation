@@ -1,0 +1,12 @@
+.tabs {
+  dd { 
+    a {
+      @extend .text-button;
+      padding-top: 1rem;
+      margin-bottom: 0;
+    }
+    &.active a {
+      box-shadow: 0 -3px 0 0 $secondary-color inset;
+    }
+  }
+}

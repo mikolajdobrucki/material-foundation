@@ -4,38 +4,137 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Material Foundation</title>
-    <link rel="stylesheet" href="css/app.css" />
-    <script src="bower_components/modernizr/modernizr.js"></script>
+    <link rel="stylesheet" href="css/demo.css" />
+    <script src="js/min/modernizr-min.js"></script>
   </head>
   <body>
-    <div class="row">
-      <div class="large-12 columns">
-        <h1>Material Foundation</h1>
-        <h2>Material Design version of Foudation Framework by Zurb</h2>
+
+    <header>
+      <div class="row">
+        <div class="large-12 columns">
+          <h1>Material Foundation</h1>
+          <h2>Material Design version of Foudation Framework by Zurb</h2>
+        </div>
       </div>
-    </div>
+    </header>
 
     <div class="row">
       <div class="large-12 columns">
         <nav class="summary">
           <h1>Contents</h1>
           <ul>
-            <li>Typography</li>
-            <li>Icons</li>
-            <li>Buttons</li>
-            <li>Tabs</li>
-            <li>Menus</li>
-            <li>Navigation Bars</li>
-            <li>Text Fields</li>
-            <li>Switches</li>
-            <li>Tooltips</li>
+            <li><a href="#icons">Icons</a></li>
+            <li><a href="#">Typography</a></li>
+            <li><a href="#buttons">Buttons</a></li>
+            <li><a href="#tabs">Tabs</a></li>
+            <li><a href="#menus">Menus</a></li>
+            <li><a href="#top-bars">Top Bars</a></li>
+            <li><a href="#text-fields">Text Fields</a></li>
+            <li><a href="#switches">Switches</a></li>
+            <li><a href="#tooltips">Tooltips</a></li>
           </ul>
         </nav>
+
+        <div class="row">
+            <div class="large-12 columns">
+                <h2 id="icons" class="demo-headline">Icons</h2>
+                <i class="icon-search"></i>
+                <a href="#"><i class="icon-home"></i></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="large-12 columns">
+              <h2 id="typography" class="demo-headline">Typography</h2>
+            </div>
+            <div class="small-12 medium-6 columns">
+              <h1 class="text-display-4">Display 4</h1>
+              <h2 class="text-display-3">Display 3</h2>
+              <h3 class="text-display-2">Display 2</h3>
+              <h4 class="text-display-1">Display 1</h4>
+            </div>
+            <div class="small-12 medium-6 columns">
+              <h5 class="text-headline">Headline</h5>
+              <p class="text-title">Title</p>
+              <p class="text-subhead">Subhead</p>
+              <p class="text-body-2">Body 2</p>
+              <p class="text-body-1">Body 1</p>
+              <p class="text-caption">Caption</p>
+              <p class="text-menu">Menu</p>
+              <p class="text-button">Button</p>
+            </div>
+            <div class="large-12 columns">
+              <h2 id="buttons" class="demo-headline">Buttons</h2>
+              <a class="raised-button ink">Raised Button</a>
+              <a class="flat-button ink">Flat Button</a>
+              <a class="disabled-button">Disabled Button</a>
+            </div>
+            <div class="large-12 columns">
+              <h2 id="tabs" class="demo-headline">Tabs</h2>
+              <dl class="tabs" data-tab>
+                <dd class="active"><a href="#panel1" class="ink ink-color">Tab 1</a></dd>
+                <dd><a href="#panel2" class="ink ink-color">Tab 2</a></dd>
+                <dd><a href="#panel3" class="ink ink-color">Tab 3</a></dd>
+                <dd><a href="#panel4" class="ink ink-color">Tab 4</a></dd>
+              </dl>
+              <div class="tabs-content">
+                <div class="content active" id="panel1">
+                  <p>This is the first panel of the basic tab example. This is the first panel of the basic tab example.</p>
+                </div>
+                <div class="content" id="panel2">
+                  <p>This is the second panel of the basic tab example. This is the second panel of the basic tab example.</p>
+                </div>
+                <div class="content" id="panel3">
+                  <p>This is the third panel of the basic tab example. This is the third panel of the basic tab example.</p>
+                </div>
+                <div class="content" id="panel4">
+                  <p>This is the fourth panel of the basic tab example. This is the fourth panel of the basic tab example.</p>
+                </div>
+              </div>
+            </div>
+            <div class="large-12 columns">
+              <h2 id="menus" class="demo-headline">Menus</h2>
+              <button href="#" data-dropdown="drop1" aria-controls="drop1" aria-expanded="false" class="raised-button ink">Dropdown Button</button>
+              <ul id="drop1" data-dropdown-content class="f-dropdown" aria-hidden="true" tabindex="-1">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Back</a></li>
+                <li><a href="#">Foreward</a></li>
+              </ul>
+            </div>
+            <div class="large-12 columns">
+              <h2 id="top-bars" class="demo-headline">Top Bars</h2>
+              <nav class="top-bar" data-topbar role="navigation">
+                <ul class="title-area">
+                  <li class="name">
+                    <h1><a href="#">My Site</a></h1>
+                  </li>
+                   <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+                  <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+                </ul>
+
+                <section class="top-bar-section">
+                  <!-- Right Nav Section -->
+                  <ul class="right">
+                    <li><a href="#">Right Button Active</a></li>
+                    <li class="has-dropdown">
+                      <a href="#">Right Button Dropdown</a>
+                      <ul class="dropdown">
+                        <li><a href="#">First link in dropdown</a></li>
+                        <li><a href="#">Active link in dropdown</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+
+                  <!-- Left Nav Section -->
+                  <ul class="left">
+                    <li><a href="#">Left Nav Button</a></li>
+                  </ul>
+                </section>
+              </nav>
+            </div>
+        </div>
+        <p></p>
       </div>
     </div>
-
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="bower_components/foundation/js/foundation.min.js"></script>
-    <script src="js/app.js"></script>
+    <script src="js/min/app-min.js"></script>
   </body>
 </html>

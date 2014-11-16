@@ -87,13 +87,14 @@ $include-html-global-classes: $include-html-classes;
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
 // We use these to define default font stacks
-// $font-family-sans-serif: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+$font-family-sans-serif: Roboto, Noto, sans-serif;
 // $font-family-serif: Georgia, Cambria, "Times New Roman", Times, serif;
 // $font-family-monospace: Consolas, "Liberation Mono", Courier, monospace;
 
 // We use these to define default font weights
-// $font-weight-normal: normal !default;
-// $font-weight-bold: bold !default;
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-bold: 500;
 
 // $white       : #FFFFFF;
 // $ghost       : #FAFAFA;
@@ -116,16 +117,16 @@ $include-html-global-classes: $include-html-classes;
 // $black       : #000000;
 
 // We use these as default colors throughout
-// $primary-color: #008CBA;
-// $secondary-color: #e7e7e7;
-// $alert-color: #f04124;
-// $success-color: #43AC6A;
-// $warning-color: #f08a24;
-// $info-color: #a0d3e8;
+$primary-color: $cyan-500;
+$secondary-color: $yellow-500;
+$alert-color: $red-500;
+$success-color: $green-500;
+$warning-color: $amber-500;
+$info-color: $light-blue-500;
 
 // We use these to control various global styles
-// $body-bg: $white;
-// $body-font-color: $jet;
+$body-bg: $grey-200;
+$body-font-color: $black-87;
 // $body-font-family: $font-family-sans-serif;
 // $body-font-weight: $font-weight-normal;
 // $body-font-style: normal;
@@ -140,7 +141,7 @@ $include-html-global-classes: $include-html-classes;
 // $last-child-float: $opposite-direction;
 
 // We use these to make sure border radius matches unless we want it different.
-// $global-radius: 3px;
+$global-radius: 2px;
 // $global-rounded: 1000px;
 
 // We use these to control inset shadow shiny edges and depressions.
@@ -423,7 +424,7 @@ $include-html-global-classes: $include-html-classes;
 // We use these to build padding for buttons.
 // $button-tny: rem-calc(10);
 // $button-sml: rem-calc(14);
-// $button-med: rem-calc(16);
+$button-med: rem-calc(10);
 // $button-lrg: rem-calc(18);
 
 // We use this to control the display property.
@@ -436,13 +437,13 @@ $include-html-global-classes: $include-html-classes;
 // $button-font-color-alt: $oil;
 // $button-font-tny: rem-calc(11);
 // $button-font-sml: rem-calc(13);
-// $button-font-med: rem-calc(16);
+$button-font-med: rem-calc(14);
 // $button-font-lrg: rem-calc(20);
 // $button-font-weight: $font-weight-normal;
 // $button-font-align: center;
 
 // We use these to control various hover effects.
-// $button-function-factor: -20%;
+$button-function-factor: -5%;
 
 // We use these to control button border and hover styles.
 // $button-border-width: 0px;
@@ -510,12 +511,12 @@ $include-html-global-classes: $include-html-classes;
 // $include-html-dropdown-classes: $include-html-classes;
 
 // We use these to controls height and width styles.
-// $f-dropdown-max-width: 200px;
+$f-dropdown-max-width: 150px;
 // $f-dropdown-height: auto;
 // $f-dropdown-max-height: none;
 
 // Used for bottom position
-// $f-dropdown-margin-top: 2px;
+$f-dropdown-margin-top: 0;
 
 // Used for right position
 // $f-dropdown-margin-left: $f-dropdown-margin-top;
@@ -531,11 +532,11 @@ $include-html-global-classes: $include-html-classes;
 
 // We use this to set the border styles for dropdowns.
 // $f-dropdown-border-style: solid;
-// $f-dropdown-border-width: 1px;
+$f-dropdown-border-width: 0;
 // $f-dropdown-border-color: scale-color($white, $lightness: -20%);
 
 // We use these to style the triangle pip.
-// $f-dropdown-triangle-size: 6px;
+$f-dropdown-triangle-size: 0;
 // $f-dropdown-triangle-color: $white;
 // $f-dropdown-triangle-side-offset: 10px;
 
@@ -545,7 +546,7 @@ $include-html-global-classes: $include-html-classes;
 // $f-dropdown-font-size: rem-calc(14);
 // $f-dropdown-list-padding: rem-calc(5, 10);
 // $f-dropdown-line-height: rem-calc(18);
-// $f-dropdown-list-hover-bg: $smoke  ;
+$f-dropdown-list-hover-bg: $grey-200;
 // $dropdown-mobile-default-float: 0;
 
 // We use this to control the styles for when the dropdown has custom content.
@@ -1299,12 +1300,12 @@ $include-html-global-classes: $include-html-classes;
 // $include-html-tabs-classes: $include-html-classes;
 
 // $tabs-navigation-padding: rem-calc(16);
-// $tabs-navigation-bg-color: $silver  ;
-// $tabs-navigation-active-bg-color: $white;
-// $tabs-navigation-hover-bg-color: scale-color($tabs-navigation-bg-color, $lightness: -6%);
-// $tabs-navigation-font-color: $jet;
-// $tabs-navigation-active-font-color: $tabs-navigation-font-color;
-// $tabs-navigation-font-size: rem-calc(16);
+$tabs-navigation-bg-color: $primary-color;
+$tabs-navigation-active-bg-color: $primary-color;
+$tabs-navigation-hover-bg-color: scale-color($tabs-navigation-bg-color, $lightness: -5%);
+$tabs-navigation-active-font-color: $white;
+$tabs-navigation-font-color: rgba($tabs-navigation-active-font-color,.6);
+$tabs-navigation-font-size: rem-calc(14);
 // $tabs-navigation-font-family: $body-font-family;
 
 // $tabs-content-margin-bottom: rem-calc(24);
@@ -1361,21 +1362,21 @@ $include-html-global-classes: $include-html-classes;
 // $include-html-top-bar-classes: $include-html-classes;
 
 // Background color for the top bar
-// $topbar-bg-color: $oil;
+$topbar-bg-color: $primary-color;
 // $topbar-bg: $topbar-bg-color;
 
 // Height and margin
-// $topbar-height: 45px;
+$topbar-height: 64px;
 // $topbar-margin-bottom: 0;
 
 // Controlling the styles for the title in the top bar
-// $topbar-title-weight: $font-weight-normal;
+$topbar-title-weight: $font-weight-bold;
 // $topbar-title-font-size: rem-calc(17);
 
 // Style the top bar dropdown elements
-// $topbar-dropdown-bg: $oil;
-// $topbar-dropdown-link-color: $white;
-// $topbar-dropdown-link-bg: $oil;
+$topbar-dropdown-bg: $white;
+$topbar-dropdown-link-color: $black-87;
+$topbar-dropdown-link-bg: $white;
 // $topbar-dropdown-link-weight: $font-weight-normal;
 // $topbar-dropdown-toggle-size: 5px;
 // $topbar-dropdown-toggle-color: $white;
@@ -1387,13 +1388,13 @@ $include-html-global-classes: $include-html-classes;
 // $topbar-link-color-active: $white;
 // $topbar-link-color-active-hover: $white;
 // $topbar-link-weight: $font-weight-normal;
-// $topbar-link-font-size: rem-calc(13);
+$topbar-link-font-size: rem-calc(14);
 // $topbar-link-hover-lightness: -10%; // Darken by 10%
 // $topbar-link-bg: $topbar-bg;
-// $topbar-link-bg-color-hover: $charcoal;
-// $topbar-link-bg-hover: #272727;
+$topbar-link-bg-color-hover: $white;
+$topbar-link-bg-hover: scale-color($primary-color, $lightness: -5%);
 // $topbar-link-bg-active: $primary-color;
-// $topbar-link-bg-active-hover: scale-color($primary-color, $lightness: -14%);
+$topbar-link-bg-active-hover: scale-color($primary-color, $lightness: -5%);
 // $topbar-link-font-family: $body-font-family;
 // $topbar-link-text-transform: none;
 // $topbar-link-padding: $topbar-height / 3;

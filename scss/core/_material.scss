@@ -1,0 +1,33 @@
+.theme-light {
+  background: $grey-200;
+  .text-display-4, .text-display-3, .text-display-2, .text-display-1, .text-caption {
+    color: $black-54;
+  }
+  .text-headline, .text-title, .text-subhead, .text-body-2, .text-body-1, .text-menu, .text-button, i {
+    color: $black-87;
+  }
+}
+.theme-dark {
+  background: $grey-900;  
+  .text-display-4, .text-display-3, .text-display-2, .text-display-1, .text-caption {
+    color: $white-54;
+  }
+  .text-headline, .text-title, .text-subhead, .text-body-2, .text-body-1, .text-menu, .text-button, i {
+    color: $white-87;
+  }
+}
+.z-depth-1 {
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.13), 0 1px 5px 0 rgba(0, 0, 0, 0.08);
+}
+.z-depth-2 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 3px 10px 0 rgba(0, 0, 0, 0.09);
+}
+.z-depth-3 {
+  box-shadow: 0 6px 7px 0 rgba(0, 0, 0, 0.12), 0 17px 50px 0 rgba(0, 0, 0, 0.08);
+}
+.z-depth-4 {
+  box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.11), 0 12px 27px 0 rgba(0, 0, 0, 0.1);
+}
+.z-depth-5 {
+  box-shadow: 0 13px 12px 0 rgba(0, 0, 0, 0.1), 0 20px 36px 0 rgba(0, 0, 0, 0.11);
+}

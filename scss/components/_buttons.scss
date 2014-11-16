@@ -1,0 +1,46 @@
+// Reference:
+// http://www.google.com/design/spec/components/buttons.html
+
+.raised-button, .flat-button, .disabled-button {
+  min-width: 64px;
+  overflow: hidden;
+  padding: {
+    left: 1rem;
+    right: 1rem;
+  }
+}
+.raised-button, .flat-button {
+  @include button($radius: true);
+  @extend .text-button;
+  margin: 0;
+}
+.raised-button {
+  @extend .z-depth-1;
+  &:active {
+    @extend .z-depth-2;
+  }
+}
+.flat-button, .disabled-button {
+  background: transparent;
+}
+.flat-button {
+  &, &:hover, &:active {
+    color: $primary-color;
+  }
+  &:hover {
+    background: rgba(#999, .2);
+  }
+  &:active {
+    background: rgba(#999, .4);
+  }
+}
+.disabled-button {
+  @include button($radius: true, $disabled: true);
+  @extend .text-button;
+  margin: 0;
+  &, &:hover, &:active {
+    background: transparent;
+    color: $black-26;
+  }
+  cursor: not-allowed !important;
+}

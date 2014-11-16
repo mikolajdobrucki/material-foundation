@@ -1,0 +1,41 @@
+.ink {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.ripple, .ripple-color {
+  position: absolute;
+  border-radius: 100%;
+  -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+          transform: scale(0);
+  pointer-events: none;
+}
+.ripple {
+  background: $black-12;
+}
+.ripple-color {
+  background: $secondary-color;
+}
+.ripple.show, .ripple-color.show  {
+  -webkit-animation: ripple .75s ease-out;
+          animation: ripple .75s ease-out;
+}
+@-webkit-keyframes ripple {
+  to {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+    opacity: 0;
+  }
+}
+@keyframes ripple {
+  to {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+    opacity: 0;
+  }
+}

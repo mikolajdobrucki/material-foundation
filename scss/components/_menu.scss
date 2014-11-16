@@ -1,0 +1,20 @@
+.f-dropdown {
+  @extend .z-depth-2;
+  border-radius: $global-radius;
+  padding: .5rem 0;
+  overflow: hidden;
+  li a {
+    padding: .75rem 1.5rem;
+    font-size: rem-calc(13);
+    color: $black-87;
+  }
+  transition: opacity .8s cubic-bezier(0.23, 1, 0.32, 1) 0ms, max-height .8s cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+}
+*[aria-expanded="false"] + .f-dropdown {
+  max-height: 0;
+  opacity: 0;
+}
+*[aria-expanded="true"] + .f-dropdown {
+  max-height: 200px;
+  opacity: 1;
+}
