@@ -9916,6 +9916,9 @@ th.hide-for-touch {
 @media only screen and (max-width: 40em) {
   .top-bar-section ul li > a {
     color: rgba(0, 0, 0, 0.87); }
+    .top-bar-section ul li > a:hover {
+      background: #eeeeee !important;
+      color: rgba(0, 0, 0, 0.87) !important; }
     .top-bar-section ul li > a.has-icon i, .top-bar-section ul li > a.has-icon span {
       line-height: 40px !important; } }
 input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="week"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], input[type="color"], textarea {

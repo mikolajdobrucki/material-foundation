@@ -32,6 +32,10 @@
 @media only screen and (max-width: 40em) {
   .top-bar-section ul li > a {
     color: $black-87;
+    &:hover {
+      background: $grey-200 !important;
+      color: $black-87 !important;
+    }
     &.has-icon {
       i, span {
         line-height: 40px !important;
