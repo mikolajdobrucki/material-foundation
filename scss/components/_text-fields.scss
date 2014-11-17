@@ -1,0 +1,32 @@
+// Reference:
+// http://www.google.com/design/spec/components/text-fields.html
+
+input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="week"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], input[type="color"], textarea {
+  padding: rem-calc(16) 0 rem-calc(8) 0;
+  margin: rem-calc(28) 0 rem-calc(8);
+  &::-webkit-input-placeholder,&::-webkit-input-placeholder {
+    color: $black-26;
+  }
+  &:-moz-placeholder, &::-moz-placeholder {
+    color: $black-26;
+  }
+  &:focus {
+    border-bottom-width: 2px;
+  }
+  &.with-floating-label + label.floating-label {
+    font-size: rem-calc(16);
+    color: $black-26;
+    position: relative;
+    top: -35px;
+    transition: top .45s ease-in-out, color .45s ease-in-out, font-size .45s ease-in-out;
+    height: 0;
+    cursor: text;
+  }
+  &.with-floating-label:focus, &.with-floating-label:valid {
+    & + label.floating-label {
+      color: $primary-color;
+      font-size: rem-calc(12);
+      top: -56px;
+    }
+  }
+}

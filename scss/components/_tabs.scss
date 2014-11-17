@@ -1,4 +1,8 @@
+// Reference:
+// http://www.google.com/design/spec/components/tabs.html
+
 .tabs {
+  background: $primary-color;
   dd { 
     a {
       @extend .text-button;

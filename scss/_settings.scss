@@ -625,17 +625,17 @@ $f-dropdown-list-hover-bg: $grey-200;
 // $form-label-bottom-margin: 0;
 // $input-font-family: inherit;
 // $input-font-color: rgba(0,0,0,0.75);
-// $input-font-size: rem-calc(14);
-// $input-bg-color: $white;
-// $input-focus-bg-color: scale-color($white, $lightness: -2%);
-// $input-border-color: scale-color($white, $lightness: -20%);
-// $input-focus-border-color: scale-color($white, $lightness: -40%);
+$input-font-size: rem-calc(16);
+$input-bg-color: transparent;
+$input-focus-bg-color: transparent;
+$input-border-color: $black-12;
+$input-focus-border-color: $primary-color;
 // $input-border-style: solid;
-// $input-border-width: 1px;
-// $input-border-radius: $global-radius;
-// $input-disabled-bg: $gainsboro;
-// $input-disabled-cursor: $cursor-default-value;
-// $input-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+$input-border-width: 0 0 1px 0;
+$input-border-radius: 0;
+$input-disabled-bg: transparent;
+$input-disabled-cursor: not-allowed;
+$input-box-shadow: none;
 
 // We use these to style the fieldset border and spacing.
 // $fieldset-border-style: solid;
@@ -671,7 +671,7 @@ $f-dropdown-list-hover-bg: $grey-200;
 // $input-error-message-font-color-alt: $oil;
 
 // We use this to style the glowing effect of inputs when focused
-// $input-include-glowing-effect: true;
+$input-include-glowing-effect: false;
 // $glowing-effect-fade-time: 0.45s;
 // $glowing-effect-color: $input-focus-border-color;
 
@@ -1232,12 +1232,12 @@ $f-dropdown-list-hover-bg: $grey-200;
 // $switch-border-color: scale-color($white, $lightness: -20%);
 // $switch-border-style: solid;
 // $switch-border-width: 1px;
-// $switch-bg: $white;
+$switch-bg: $black-26;
 
 // We use these to control the switch heights for our default classes
 // $switch-height-tny: rem-calc(22);
 // $switch-height-sml: rem-calc(28);
-// $switch-height-med: rem-calc(36);
+$switch-height-med: rem-calc(28);
 // $switch-height-lrg: rem-calc(44);
 // $switch-bottom-margin: rem-calc(20);
 
@@ -1249,15 +1249,16 @@ $f-dropdown-list-hover-bg: $grey-200;
 // $switch-label-side-padding: 6px;
 
 // We use these to style the switch-paddle
-// $switch-paddle-bg: $white;
+$switch-paddle-bg: $grey-50;
 // $switch-paddle-fade-to-color: scale-color($switch-paddle-bg, $lightness: -10%);
 // $switch-paddle-border-color: scale-color($switch-paddle-bg, $lightness: -35%);
-// $switch-paddle-border-width: 1px;
+$switch-paddle-border-width: 0;
 // $switch-paddle-border-style: solid;
 // $switch-paddle-transition-speed: .1s;
 // $switch-paddle-transition-ease: ease-out;
 // $switch-positive-color: scale-color($success-color, $lightness: 94%);
 // $switch-negative-color: $white-smoke;
+$switch-active-color: rgba($teal-500,.5);
 
 // Outline Style for tabbing through switches
 // $switch-label-outline: 1px dotted $jumbo;
@@ -1342,8 +1343,8 @@ $tabs-navigation-font-size: rem-calc(14);
 // $has-tip-cursor-type: help;
 
 // $tooltip-padding: rem-calc(12);
-// $tooltip-bg: $oil;
-// $tooltip-font-size: rem-calc(14);
+$tooltip-bg: rgba($grey-700,.9);
+$tooltip-font-size: rem-calc(12);
 // $tooltip-font-weight: $font-weight-normal;
 // $tooltip-font-color: $white;
 // $tooltip-line-height: 1.3;
@@ -1353,7 +1354,7 @@ $tabs-navigation-font-size: rem-calc(14);
 // $tooltip-font-size-sml: rem-calc(14);
 // $tooltip-radius: $global-radius;
 // $tooltip-rounded: $global-rounded;
-// $tooltip-pip-size: 5px;
+$tooltip-pip-size: 0;
 // $tooltip-max-width: 300px;
 
 // 34. Top Bar
@@ -1409,6 +1410,8 @@ $topbar-link-bg-active-hover: scale-color($primary-color, $lightness: -5%);
 // $topbar-dropdown-label-font-weight: $font-weight-bold;
 // $topbar-dropdown-label-font-size: rem-calc(10);
 // $topbar-dropdown-label-bg: $oil;
+$topbar-menu-link-color-toggled: $white;
+$topbar-menu-icon-color-toggled: $white;
 
 // Top menu icon styles
 // $topbar-menu-link-transform: uppercase;

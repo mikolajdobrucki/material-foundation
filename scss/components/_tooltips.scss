@@ -1,0 +1,6 @@
+// Reference:
+// http://www.google.com/design/spec/components/tooltips.html
+
+.tooltip {
+  @include radius($tooltip-radius);
+}

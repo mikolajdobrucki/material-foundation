@@ -1,0 +1,99 @@
+// Reference:
+// http://www.google.com/design/spec/components/switches.html
+
+// Radio and checkbox inputs
+input[type="checkbox"], input[type="radio"] {
+  display: none;
+  cursor: pointer;
+  transition: all .4s ease-in-out;
+}
+label.radio, label.checkbox {
+  display: inline-block;
+  line-height: 18px;
+  position: relative;
+  padding-left: 30px;
+  text-align: center;
+  cursor: pointer;
+  &:before {
+    content: "";
+    display: inline-block;
+    height: 18px;
+    width: 18px;
+    position: absolute;
+    left: 0;
+    top: -1px;
+  }
+}
+
+// Checkbox inputs
+label.checkbox:before, label.radio:before {
+  transition: all .2s ease-in-out;
+}
+label.checkbox:before {
+  border: 2px solid $black-54;
+  border-radius: $global-radius;
+  background-color: rgba($teal-500, 0);
+}
+label.checkbox.checked:before {
+  content: '\e8a6';
+  line-height: 18px;
+  font-size: 14px;
+  color: $grey-200;
+  background-color: $teal-500;
+  border: 0;
+  font-family: 'icomoon';
+}
+
+// Radio inputs
+label.radio:before {
+  width: 0px;
+  height: 0px;
+  border: 0px solid $teal-500;
+  position: absolute;
+  top: 9px;
+  left: 9px;
+}
+label.radio.checked:before {
+  width: 6px;
+  height: 6px;
+  border: 5px solid $teal-500;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+}
+label.radio:before, label.radio:after {
+  border-radius: 10px;
+}
+label.radio:after {
+  content: "";
+  display: inline-block;  
+  width: 20px;  
+  height: 20px;
+  position: absolute;  
+  left: -1px;  
+  top: -1px;  
+  border: 2px solid $black-54;
+}
+label.radio.checked:after {
+  border-color: $teal-500;
+}
+
+// Switches
+.switch {
+  input + label {
+    height: rem-calc(14);
+    border-radius: rem-calc(7);
+    width: 2rem;
+    box-shadow: 0 1px 1px $black-26 inset;
+  }
+  input + label:after {
+    @extend .z-depth-1-hard;
+    border-radius: rem-calc(10);
+    top: rem-calc(-3);
+    left: rem-calc(-5);
+  }
+  input:checked + label:after {
+    background: $teal-500;
+    left: 1.1rem;
+  }
+}

@@ -17,8 +17,40 @@ header {
     color: $white;
   }
 }
-
+.summary {
+  margin-top: 50px;
+}
+.box, .box-white {
+  padding: 20px;
+  margin: {
+    left: 0px !important;
+    right: 0px !important;
+  }
+}
+.box {
+  background: $grey-200;
+}
+.box-white {
+  background: $white;
+}
 h2.demo-headline {
   @extend .text-headline;
   color: $primary-color;
+  margin-top: 50px
+}
+.tabs-content {
+  background: $white;
+  padding: 20px;
+}
+.icons {
+  text-align: center;
+}
+.icons i {
+  font-size: 48px;
+  display: inline-block;
+  height: 48px;
+  width: 48px;
+  overflow: hidden;
+  margin: 10px;
+  color: $grey-500;
 }

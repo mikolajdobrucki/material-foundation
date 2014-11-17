@@ -1,0 +1,22 @@
+// Reference:
+// http://www.google.com/design/spec/material-design/introduction.html
+
+.summary {
+  border-left: 5px solid  rgba($primary-color, .4);
+  padding-left: 20px;
+  h1 {
+    @extend .text-subhead;
+    color: $black-54;
+  }
+  ul {
+    margin: 0;
+    li {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      font-size: 20px;
+      list-style: 40px;
+      font-weight: $font-weight-light;
+    }
+  }
+}
