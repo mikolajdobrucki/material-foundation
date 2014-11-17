@@ -23,3 +23,4 @@
 $(document).foundation();
 
 // @codekit-prepend "_ripple.js";
+// @codekit-prepend "_switches.js";

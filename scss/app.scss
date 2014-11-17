@@ -33,11 +33,11 @@
   // "foundation/components/side-nav",
   // "foundation/components/split-buttons",
   // "foundation/components/sub-nav",
-  // "foundation/components/switches",
+  "foundation/components/switches",
   // "foundation/components/tables",
   "foundation/components/tabs",
   // "foundation/components/thumbs",
-  // "foundation/components/tooltips",
+  "foundation/components/tooltips",
   "foundation/components/top-bar",
   "foundation/components/type",
   // "foundation/components/offcanvas",
@@ -58,5 +58,9 @@
 @import
   "components/tabs",
   "components/buttons",
-  "components/menu",
-  "components/top-bar";
+  "components/menus",
+  "components/top-bars",
+  "components/text-fields",
+  "components/switches",
+  "components/tooltips",
+  "components/summary";
