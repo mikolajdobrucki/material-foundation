@@ -3,7 +3,7 @@ material-foundation
 
 Material Design version of Foudation Framework by Zurb
 
-DEMO: [](http://eucalyptuss.github.io/material-foundation/)
+DEMO: [http://eucalyptuss.github.io/material-foundation/](http://eucalyptuss.github.io/material-foundation/)
 
 This project is under development and absolutely not suitable for any use.
 
