@@ -55,7 +55,7 @@
 // $rem-base: 16px;
 
 // Allows the use of rem-calc() or lower-bound() in your settings
-@import "foundation/functions";
+@import "../bower_components/foundation/scss/foundation/functions";
 
 // The default font-size is set to 100% of the browser style sheet (usually 16px)
 // for compatibility with browser-based text zoom or user-set defaults.
@@ -1367,7 +1367,7 @@ $topbar-bg-color: $primary-color;
 // $topbar-bg: $topbar-bg-color;
 
 // Height and margin
-$topbar-height: 64px;
+$topbar-height: rem-calc(64);
 // $topbar-margin-bottom: 0;
 
 // Controlling the styles for the title in the top bar
