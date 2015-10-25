@@ -19,10 +19,10 @@ module.exports = function(grunt) {
             'bower_components/jquery/dist/jquery.min.js',
             'bower_components/fastclick/lib/fastclick.js',
             'bower_components/foundation/js/foundation.js',
-            'js/dropdown.js',
-            'js/scripts.js',
-            'js/ripple.js',
-            'js/switches.js'
+            'js/src/dropdown.js',
+            'js/src/material-foundation.js',
+            'js/src/ripple.js',
+            'js/src/switches.js'
           ]
         }
       }
