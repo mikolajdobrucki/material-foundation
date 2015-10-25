@@ -1393,9 +1393,9 @@ $topbar-link-font-size: rem-calc(14);
 // $topbar-link-hover-lightness: -10%; // Darken by 10%
 // $topbar-link-bg: $topbar-bg;
 $topbar-link-bg-color-hover: $white;
-$topbar-link-bg-hover: scale-color($primary-color, $lightness: -5%);
+$topbar-link-bg-hover: scale-color($topbar-bg-color, $lightness: -5%);
 // $topbar-link-bg-active: $primary-color;
-$topbar-link-bg-active-hover: scale-color($primary-color, $lightness: -5%);
+$topbar-link-bg-active-hover: scale-color($topbar-bg-color, $lightness: -5%);
 // $topbar-link-font-family: $body-font-family;
 // $topbar-link-text-transform: none;
 // $topbar-link-padding: $topbar-height / 3;

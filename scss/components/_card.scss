@@ -1,0 +1,5 @@
+.card {
+  border-radius: $global-radius;
+  @extend .z-depth-1;
+  background: $white;
+}
