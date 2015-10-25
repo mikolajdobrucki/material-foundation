@@ -4,7 +4,10 @@
 .bundle
 .config
 .sass-cache/*
-.css.map
+*.css.map
+
+css/*.css
+js/material-foundation.js
 
 npm-debug.log
 

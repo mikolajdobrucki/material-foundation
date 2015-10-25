@@ -4433,7 +4433,7 @@ th.hide-for-touch {
   color: rgba(255, 255, 255, 0.87);
 }
 
-.z-depth-1, .raised-button, .top-bar {
+.z-depth-1, .raised-button, .floating-action-button, .card, .top-bar {
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.13), 0 1px 5px 0 rgba(0, 0, 0, 0.08);
 }
 
@@ -4441,7 +4441,7 @@ th.hide-for-touch {
   box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.32), 0 1px 5px 0 rgba(0, 0, 0, 0.24);
 }
 
-.z-depth-2, .raised-button:active, .f-dropdown, .top-bar .top-bar-section .dropdown {
+.z-depth-2, .raised-button:active, .floating-action-button:active, .f-dropdown, .top-bar .top-bar-section .dropdown {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 3px 10px 0 rgba(0, 0, 0, 0.09);
 }
 
@@ -7710,6 +7710,46 @@ th.hide-for-touch {
   color: white;
 }
 
+.floating-action-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border-radius: 0;
+  border-style: solid;
+  border-width: 0;
+  cursor: pointer;
+  font-family: Roboto, Noto, sans-serif;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0 0 1.25rem;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.625rem 1.25rem 0.6875rem 1.25rem;
+  font-size: 0.875rem;
+  background-color: #00bcd4;
+  border-color: #00b3c9;
+  color: white;
+  border-radius: 1000px;
+  transition: background-color 300ms ease-out;
+  overflow: hidden;
+  width: 56px;
+  height: 56px;
+  padding: 1rem;
+  margin: 0;
+}
+.floating-action-button:hover, .floating-action-button:focus {
+  background-color: #00b3c9;
+}
+.floating-action-button:hover, .floating-action-button:focus {
+  color: white;
+}
+.floating-action-button i {
+  font-size: 24px;
+  text-align: center;
+  color: white;
+}
+
 .flat-button, .disabled-button {
   background: transparent;
 }
@@ -7786,6 +7826,11 @@ th.hide-for-touch {
 *[aria-expanded="true"] + .f-dropdown {
   max-height: 200px;
   opacity: 1;
+}
+
+.card {
+  border-radius: 2px;
+  background: white;
 }
 
 .top-bar .top-bar-section .has-icon {
