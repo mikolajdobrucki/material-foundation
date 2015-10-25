@@ -1,0 +1,14 @@
+*.DS_Store
+*.scssc
+*.sublime-*
+.bundle
+.config
+.sass-cache/*
+*.css.map
+
+css/*.css
+js/material-foundation.js
+
+npm-debug.log
+
+bower_components

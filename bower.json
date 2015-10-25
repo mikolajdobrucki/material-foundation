@@ -1,6 +1,12 @@
 {
-  "name": "foundation-libsass-template",
+  "name": "material-foundation",
+  "main": [
+    "scss/material-foundation.scss",
+    "js/material-foundation.js"
+  ],
+  "ignore": [
+  ],
   "dependencies": {
-    "foundation": "zurb/bower-foundation"
+    "foundation": "~5.5.3"
   }
 }

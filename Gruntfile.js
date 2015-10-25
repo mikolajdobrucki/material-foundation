@@ -1,40 +1,37 @@
 module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
-
-    sass: {
-      options: {
-        includePaths: ['bower_components/foundation/scss']
-      },
-      dist: {
-        options: {
-          outputStyle: 'compressed',
-          sourceMap: true,
+    sass: {                              // Task
+      dist: {                            // Target
+        options: {                       // Target options
+          style: 'expanded'
         },
         files: {
-          'css/app.css': 'scss/app.scss'
+          'css/material-foundation.css': 'scss/material-foundation.scss',
+          'css/demo.css': 'scss/demo.scss'
         }
       }
     },
-
-    watch: {
-      grunt: {
-        options: {
-          reload: true
-        },
-        files: ['Gruntfile.js']
+    uglify: {
+      options: {
+        mangle: false
       },
-
-      sass: {
-        files: 'scss/**/*.scss',
-        tasks: ['sass']
+      my_target: {
+        files: {
+          'js/material-foundation.js': [
+            'bower_components/jquery/dist/jquery.min.js',
+            'bower_components/fastclick/lib/fastclick.js',
+            'bower_components/foundation/js/foundation.js',
+            'js/src/dropdown.js',
+            'js/src/material-foundation.js',
+            'js/src/ripple.js',
+            'js/src/switches.js'
+          ]
+        }
       }
     }
   });
-
-  grunt.loadNpmTasks('grunt-sass');
-  grunt.loadNpmTasks('grunt-contrib-watch');
-
-  grunt.registerTask('build', ['sass']);
-  grunt.registerTask('default', ['build','watch']);
-}
+  grunt.loadNpmTasks('grunt-contrib-sass');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.registerTask('default', ['sass','uglify']);
+};
