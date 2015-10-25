@@ -13,6 +13,9 @@ module.exports = function(grunt) {
       }
     },
     uglify: {
+      options: {
+        mangle: false
+      },
       my_target: {
         files: {
           'js/material-foundation.js': [
@@ -30,5 +33,5 @@ module.exports = function(grunt) {
   });
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-uglify');
-  grunt.registerTask('default', ['sass']);
+  grunt.registerTask('default', ['sass','uglify']);
 };
