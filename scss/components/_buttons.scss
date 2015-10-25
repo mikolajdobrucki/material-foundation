@@ -14,7 +14,20 @@
   @extend .text-button;
   margin: 0;
 }
-.raised-button {
+.floating-action-button {
+  @include button($radius: $global-rounded);
+  overflow: hidden;
+  width: 56px;
+  height: 56px;
+  padding: 1rem;
+  margin: 0;
+  i {
+    font-size: 24px;
+    text-align: center;
+    color: white;
+  }
+}
+.raised-button, .floating-action-button {
   @extend .z-depth-1;
   &:active {
     @extend .z-depth-2;
