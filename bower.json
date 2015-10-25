@@ -1,5 +1,5 @@
 {
-  "name": "foundation-libsass-template",
+  "name": "material-foundation",
   "dependencies": {
     "foundation": "zurb/bower-foundation"
   }
