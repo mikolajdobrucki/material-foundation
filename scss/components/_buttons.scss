@@ -9,13 +9,10 @@
     right: 1rem;
   }
 }
-.raised-button, .flat-button {
-  @include button($radius: true);
+.raised-button, .flat-button, .disabled-button {
   @extend .text-button;
-  margin: 0;
 }
 .floating-action-button {
-  @include button($radius: $global-rounded);
   overflow: hidden;
   width: 56px;
   height: 56px;
@@ -28,32 +25,18 @@
   }
 }
 .raised-button, .floating-action-button {
+  @include button;
   @extend .z-depth-1;
   &:active {
     @extend .z-depth-2;
   }
 }
-.flat-button, .disabled-button {
-  background: transparent;
-}
 .flat-button {
-  &, &:hover, &:active {
-    color: $primary-color;
-  }
-  &:hover {
-    background: rgba(#999, .2);
-  }
-  &:active {
-    background: rgba(#999, .4);
-  }
+  @include button($background: transparent, $background-hover: rgba(#999, .2), $color: $primary-color);
+  &,&:hover { color: $primary-color; }
 }
 .disabled-button {
-  @include button($radius: true, $disabled: true);
-  @extend .text-button;
-  margin: 0;
-  &, &:hover, &:active {
-    background: transparent;
-    color: $black-26;
-  }
+  @include button($background: transparent, $background-hover: transparent, $color: $black-26);
+  &,&:hover { color: $black-26; }
   cursor: not-allowed !important;
 }

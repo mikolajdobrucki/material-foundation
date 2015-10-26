@@ -8,7 +8,7 @@
   letter-spacing: -7px;
   padding-top: 17px;
   margin-bottom: 15px;
-  font-weight: $font-weight-light;
+  font-weight: $global-weight-light;
 }
 
 .text-display-3 {
@@ -17,7 +17,7 @@
   letter-spacing: -2px;
   padding-top: 8px;
   margin-bottom: 28px;
-  font-weight: $font-weight-normal;
+  font-weight: $global-weight-normal;
 }
 
 .text-display-2 {
@@ -25,7 +25,7 @@
   line-height: 48px;
   margin-bottom: 11px;
   letter-spacing: -1px;
-  font-weight: $font-weight-normal;
+  font-weight: $global-weight-normal;
 }
 
 .text-display-1 {
@@ -34,7 +34,7 @@
   padding-top: 8px;
   margin-bottom: 12px;
   letter-spacing: -1px;
-  font-weight: $font-weight-normal;
+  font-weight: $global-weight-normal;
 }
 
 .text-headline {
@@ -43,7 +43,7 @@
   padding-top: 16px;
   margin-bottom: 12px;
   letter-spacing: 0;
-  font-weight: $font-weight-normal; 
+  font-weight: $global-weight-normal;
 }
 
 .text-title {
@@ -52,7 +52,7 @@
   padding-top: 19px;
   margin-bottom: 13px;
   letter-spacing: 0;
-  font-weight: $font-weight-bold; 
+  font-weight: $global-weight-bold;
 }
 
 .text-subhead {
@@ -61,7 +61,7 @@
   padding-top: 2px;
   margin-bottom: 10px;
   letter-spacing: 0;
-  font-weight: $font-weight-normal; 
+  font-weight: $global-weight-normal;
 }
 
 .text-body-2 {
@@ -70,7 +70,7 @@
   padding-top: 4px;
   margin-bottom: 12px;
   letter-spacing: 0;
-  font-weight: $font-weight-bold; 
+  font-weight: $global-weight-bold;
 }
 
 .text-body-1 {
@@ -79,7 +79,7 @@
   padding-top: 6px;
   margin-bottom: 14px;
   letter-spacing: 0;
-  font-weight: $font-weight-normal; 
+  font-weight: $global-weight-normal;
 }
 
 .text-caption {
@@ -88,7 +88,7 @@
   padding-top: 6px;
   margin-bottom: 14px;
   letter-spacing: 0;
-  font-weight: $font-weight-normal;
+  font-weight: $global-weight-normal;
 }
 
 .text-menu {
@@ -97,7 +97,7 @@
   padding-top: 6px;
   margin-bottom: 14px;
   letter-spacing: 0;
-  font-weight: $font-weight-bold; 
+  font-weight: $global-weight-bold;
 }
 
 .text-button {
@@ -107,5 +107,5 @@
   margin-bottom: 15px;
   letter-spacing: 0;
   text-transform: uppercase;
-  font-weight: $font-weight-bold !important; 
+  font-weight: $global-weight-bold !important; 
 }

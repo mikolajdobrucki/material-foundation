@@ -3,45 +3,12 @@
   "style/color";
 
 // Foudation Customisation
+@import "global";
 @import "settings";
 
 // Foudation Files
 @import
-  // "foundation/components/accordion",
-  // "foundation/components/alert-boxes",
-  // "foundation/components/block-grid",
-  // "foundation/components/breadcrumbs",
-  // "foundation/components/button-groups",
-  "../bower_components/foundation/scss/foundation/components/buttons",
-  // "foundation/components/clearing",
-  "../bower_components/foundation/scss/foundation/components/dropdown",
-  "../bower_components/foundation/scss/foundation/components/dropdown-buttons",
-  // "foundation/components/flex-video",
-  // "foundation/components/forms",
-  "../bower_components/foundation/scss/foundation/components/grid",
-  // "foundation/components/inline-lists",
-  // "foundation/components/joyride",
-  // "foundation/components/keystrokes",
-  // "foundation/components/labels",
-  // "foundation/components/magellan",
-  // "foundation/components/orbit",
-  // "foundation/components/pagination",
-  // "foundation/components/panels",
-  // "foundation/components/pricing-tables",
-  // "foundation/components/progress-bars",
-  // "foundation/components/reveal",
-  // "foundation/components/side-nav",
-  // "foundation/components/split-buttons",
-  // "foundation/components/sub-nav",
-  "../bower_components/foundation/scss/foundation/components/switches",
-  // "foundation/components/tables",
-  "../bower_components/foundation/scss/foundation/components/tabs",
-  // "foundation/components/thumbs",
-  "../bower_components/foundation/scss/foundation/components/tooltips",
-  "../bower_components/foundation/scss/foundation/components/top-bar",
-  "../bower_components/foundation/scss/foundation/components/type",
-  // "foundation/components/offcanvas",
-  "../bower_components/foundation/scss/foundation/components/visibility";
+  "foudation";
 
 // Material Design - Core
 @import

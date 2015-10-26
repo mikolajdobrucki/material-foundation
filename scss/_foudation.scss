@@ -1,0 +1,95 @@
+// Foundation for Sites by ZURB
+// foundation.zurb.com
+// Licensed under MIT Open Source
+
+$foundation-version: '6.0.0-alpha.1';
+
+// Third-party libraries
+@import '../bower_components/foundation-6/scss/vendor/normalize';
+
+// Sass utilities
+@import '../bower_components/foundation-6/scss/util/util';
+
+// Global variables and styles
+@import '../bower_components/foundation-6/scss/global';
+
+// Components
+@import
+  '../bower_components/foundation-6/scss/grid/grid',
+  '../bower_components/foundation-6/scss/typography/typography',
+  '../bower_components/foundation-6/scss/forms/forms',
+  '../bower_components/foundation-6/scss/components/visibility',
+  '../bower_components/foundation-6/scss/components/float',
+  '../bower_components/foundation-6/scss/components/button',
+  '../bower_components/foundation-6/scss/components/button-group',
+  '../bower_components/foundation-6/scss/components/accordion-menu',
+  '../bower_components/foundation-6/scss/components/accordion',
+  '../bower_components/foundation-6/scss/components/badge',
+  '../bower_components/foundation-6/scss/components/breadcrumbs',
+  '../bower_components/foundation-6/scss/components/callout',
+  '../bower_components/foundation-6/scss/components/close-button',
+  '../bower_components/foundation-6/scss/components/drilldown',
+  '../bower_components/foundation-6/scss/components/dropdown-menu',
+  '../bower_components/foundation-6/scss/components/dropdown',
+  '../bower_components/foundation-6/scss/components/flex-video',
+  '../bower_components/foundation-6/scss/components/label',
+  '../bower_components/foundation-6/scss/components/media-object',
+  '../bower_components/foundation-6/scss/components/menu',
+  '../bower_components/foundation-6/scss/components/off-canvas',
+  '../bower_components/foundation-6/scss/components/orbit',
+  '../bower_components/foundation-6/scss/components/pagination',
+  '../bower_components/foundation-6/scss/components/progress-bar',
+  '../bower_components/foundation-6/scss/components/reveal',
+  '../bower_components/foundation-6/scss/components/slider',
+  '../bower_components/foundation-6/scss/components/sticky',
+  '../bower_components/foundation-6/scss/components/switch',
+  '../bower_components/foundation-6/scss/components/table',
+  '../bower_components/foundation-6/scss/components/tabs',
+  '../bower_components/foundation-6/scss/components/title-bar',
+  '../bower_components/foundation-6/scss/components/top-bar',
+  '../bower_components/foundation-6/scss/components/thumbnail',
+  '../bower_components/foundation-6/scss/components/tooltip';
+
+// These styles are applied to <meta> tags, which are read by the Foundation JavaScript
+.foundation-mq {
+  font-family: "#{-zf-bp-serialize($breakpoints)}";
+}
+
+@mixin foundation-everything {
+  @include foundation-global-styles;
+  @include foundation-grid;
+  @include foundation-typography;
+  // @include foundation-button;
+  // @include foundation-forms;
+  @include foundation-visibility-classes;
+  @include foundation-float-classes;
+  // @include foundation-accordion;
+  // @include foundation-badge;
+  // @include foundation-breadcrumbs;
+  @include foundation-button-group;
+  // @include foundation-callout;
+  // @include foundation-close-button;
+  // @include foundation-drilldown-menu;
+  @include foundation-dropdown;
+  // @include foundation-dropdown-menu
+  // @include foundation-flex-video;
+  // @include foundation-label;
+  // @include foundation-media-object;
+  // @include foundation-menu;
+  // @include foundation-off-canvas;
+  // @include foundation-orbit;
+  // @include foundation-pagination;
+  // @include foundation-progress-bar;
+  // @include foundation-slider;
+  // @include foundation-sticky;
+  // @include foundation-reveal;
+  @include foundation-switch;
+  // @include foundation-table;
+  @include foundation-tabs;
+  // @include foundation-thumbnail;
+  @include foundation-title-bar;
+  @include foundation-tooltip;
+  @include foundation-top-bar;
+}
+
+@include foundation-everything;

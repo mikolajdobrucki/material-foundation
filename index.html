@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Material Foundation</title>
     <link rel="stylesheet" href="css/demo.css" />
-    <script src="bower_components/modernizr/modernizr.js"></script>
   </head>
   <body>
 
@@ -100,23 +99,23 @@
             <div class="large-12 columns">
               <div class="row box">
                 <div class="large-12 columns">
-                  <dl class="tabs" data-tab>
-                    <dd class="active"><a href="#panel1" class="ink ink-color">NO. 1</a></dd>
-                    <dd><a href="#panel2" class="ink ink-color">ITEM TWO</a></dd>
-                    <dd><a href="#panel3" class="ink ink-color">ITEM THIRD</a></dd>
-                    <dd><a href="#panel4" class="ink ink-color">ITEM FOURTH</a></dd>
-                  </dl>
-                  <div class="tabs-content">
-                    <div class="content active" id="panel1">
+                  <ul class="tabs" data-tabs id="material-tabs">
+                    <li class="tabs-title is-active"><a href="#panel1" aria-selected="true" class="ink ink-color">NO. 1</a></li>
+                    <li class="tabs-title"><a href="#panel2" aria-selected="true" class="ink ink-color">ITEM TWO</a></li>
+                    <li class="tabs-title"><a href="#panel3" aria-selected="true" class="ink ink-color">ITEM THIRD</a></li>
+                    <li class="tabs-title"><a href="#panel4" aria-selected="true" class="ink ink-color">ITEM FOURTH</a></li>
+                  </ul>
+                  <div class="tabs-content" data-tabs-content="material-tabs">
+                    <div class="tabs-panel is-active" id="panel1">
                       <p>This is the first panel of the basic tab example. This is the first panel of the basic tab example.</p>
                     </div>
-                    <div class="content" id="panel2">
+                    <div class="tabs-panel" id="panel2">
                       <p>This is the second panel of the basic tab example. This is the second panel of the basic tab example.</p>
                     </div>
-                    <div class="content" id="panel3">
+                    <div class="tabs-panel" id="panel3">
                       <p>This is the third panel of the basic tab example. This is the third panel of the basic tab example.</p>
                     </div>
-                    <div class="content" id="panel4">
+                    <div class="tabs-panel" id="panel4">
                       <p>This is the fourth panel of the basic tab example. This is the fourth panel of the basic tab example.</p>
                     </div>
                   </div>
@@ -152,7 +151,7 @@
                         <h1><a href="#">App Name</a></h1>
                       </li>
                        <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-                      <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li
+                      <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
                     </ul>
                     <section class="top-bar-section">
                       <!-- Right Nav Section -->
