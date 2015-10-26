@@ -410,7 +410,7 @@ th {
   width: 0;
   height: 0;
   border: inset 5px;
-  border-color: #2199e8 transparent transparent;
+  border-color: #00bcd4 transparent transparent;
   border-top-style: solid;
 }
 .dropdown.menu .has-submenu.is-right-arrow > a::after {
@@ -419,7 +419,7 @@ th {
   width: 0;
   height: 0;
   border: inset 5px;
-  border-color: transparent #2199e8 transparent transparent;
+  border-color: transparent #00bcd4 transparent transparent;
   border-right-style: solid;
   float: left;
   margin-left: 0;
@@ -431,7 +431,7 @@ th {
   width: 0;
   height: 0;
   border: inset 5px;
-  border-color: transparent transparent transparent #2199e8;
+  border-color: transparent transparent transparent #00bcd4;
   border-left-style: solid;
 }
 .dropdown.menu .submenu {
@@ -507,8 +507,8 @@ body {
   font-family: Roboto, Noto, sans-serif;
   font-weight: 400;
   line-height: 1.5;
-  color: black;
-  background: white;
+  color: rgba(0, 0, 0, 0.87);
+  background: #eeeeee;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -1613,13 +1613,13 @@ h6 small {
   }
 }
 a {
-  color: #2199e8;
+  color: #00bcd4;
   text-decoration: none;
   line-height: inherit;
   cursor: pointer;
 }
 a:hover, a:focus {
-  color: #1585cf;
+  color: #00a2b6;
 }
 a img {
   border: 0;
@@ -1689,15 +1689,15 @@ cite:before {
 }
 
 abbr {
-  color: black;
+  color: rgba(0, 0, 0, 0.87);
   cursor: help;
-  border-bottom: 1px dotted black;
+  border-bottom: 1px dotted rgba(0, 0, 0, 0.87);
 }
 
 code {
   font-family: Consolas, "Liberation Mono", Courier, monospace;
   font-weight: 400;
-  color: black;
+  color: rgba(0, 0, 0, 0.87);
   background-color: #f3f3f3;
   border: 1px solid #cacaca;
   padding: 0.125rem 0.3125rem 0.0625rem;
@@ -1707,7 +1707,7 @@ kbd {
   padding: 0.125rem 0.25rem 0;
   margin: 0;
   background-color: #f3f3f3;
-  color: black;
+  color: rgba(0, 0, 0, 0.87);
   font-family: Consolas, "Liberation Mono", Courier, monospace;
 }
 
@@ -2048,7 +2048,7 @@ p + .stat {
   font-size: inherit;
 }
 .button-group .button:not(:last-child) {
-  border-right: 1px solid white;
+  border-right: 1px solid #eeeeee;
 }
 .button-group.tiny {
   font-size: 0.6rem;
@@ -2075,43 +2075,43 @@ p + .stat {
   width: 16.66667%;
 }
 .button-group.primary .button {
-  background: #2199e8;
+  background: #00bcd4;
   color: #fff;
 }
 .button-group.primary .button:hover, .button-group.primary .button:focus {
-  background: #147cc0;
+  background: #0096aa;
   color: #fff;
 }
 .button-group.secondary .button {
-  background: #777;
+  background: #ffeb3b;
   color: #fff;
 }
 .button-group.secondary .button:hover, .button-group.secondary .button:focus {
-  background: #5f5f5f;
+  background: #fbe200;
   color: #fff;
 }
 .button-group.success .button {
-  background: #3adb76;
+  background: #259b24;
   color: #fff;
 }
 .button-group.success .button:hover, .button-group.success .button:focus {
-  background: #22bb5b;
+  background: #1e7c1d;
   color: #fff;
 }
 .button-group.alert .button {
-  background: #ec5840;
+  background: #e51c23;
   color: #fff;
 }
 .button-group.alert .button:hover, .button-group.alert .button:focus {
-  background: #da3116;
+  background: #b8151b;
   color: #fff;
 }
 .button-group.warning .button {
-  background: #ffae00;
+  background: #ffc107;
   color: #fff;
 }
 .button-group.warning .button:hover, .button-group.warning .button:focus {
-  background: #cc8b00;
+  background: #d29d00;
   color: #fff;
 }
 .button-group.stacked .button, .button-group.stacked-for-small .button {
@@ -2123,12 +2123,12 @@ p + .stat {
     width: auto;
   }
   .button-group.stacked-for-small .button:not(:last-child) {
-    border-right: 1px solid white;
+    border-right: 1px solid #eeeeee;
   }
 }
 
 .dropdown-pane {
-  background-color: white;
+  background-color: #eeeeee;
   border: 1px solid #cacaca;
   display: block;
   padding: 1rem;
@@ -2196,7 +2196,7 @@ input + .switch-paddle {
   transform: translate3d(0, 0, 0);
 }
 input:checked ~ .switch-paddle {
-  background: #2199e8;
+  background: #00bcd4;
 }
 input:checked ~ .switch-paddle::after {
   left: 2.25rem;
@@ -2269,7 +2269,7 @@ input:checked + label > .switch-inactive {
 }
 
 .title-bar {
-  background: black;
+  background: rgba(0, 0, 0, 0.87);
   color: white;
   padding: 0.5rem;
 }
@@ -2359,7 +2359,7 @@ input:checked + label > .switch-inactive {
 }
 
 .tooltip {
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.87);
   color: white;
   font-size: 80%;
   padding: 0.75rem;
@@ -2374,7 +2374,7 @@ input:checked + label > .switch-inactive {
   width: 0;
   height: 0;
   border: inset 0.75rem;
-  border-color: transparent transparent black;
+  border-color: transparent transparent rgba(0, 0, 0, 0.87);
   border-bottom-style: solid;
   bottom: 100%;
   position: absolute;
@@ -2387,7 +2387,7 @@ input:checked + label > .switch-inactive {
   width: 0;
   height: 0;
   border: inset 0.75rem;
-  border-color: black transparent transparent;
+  border-color: rgba(0, 0, 0, 0.87) transparent transparent;
   border-top-style: solid;
   top: 100%;
   bottom: auto;
@@ -2398,7 +2398,7 @@ input:checked + label > .switch-inactive {
   width: 0;
   height: 0;
   border: inset 0.75rem;
-  border-color: transparent transparent transparent black;
+  border-color: transparent transparent transparent rgba(0, 0, 0, 0.87);
   border-left-style: solid;
   bottom: auto;
   left: 100%;
@@ -2411,7 +2411,7 @@ input:checked + label > .switch-inactive {
   width: 0;
   height: 0;
   border: inset 0.75rem;
-  border-color: transparent black transparent transparent;
+  border-color: transparent rgba(0, 0, 0, 0.87) transparent transparent;
   border-right-style: solid;
   bottom: auto;
   left: auto;
@@ -2516,7 +2516,7 @@ input:checked + label > .switch-inactive {
 }
 
 .ripple-color {
-  background: #777;
+  background: #ffeb3b;
 }
 
 .ripple.show, .ripple-color.show {
@@ -5699,7 +5699,7 @@ input:checked + label > .switch-inactive {
 .tabs {
   margin: 0;
   list-style-type: none;
-  background: #2199e8;
+  background: #00bcd4;
   border: 1px solid #f3f3f3;
 }
 .tabs::before, .tabs::after {
@@ -5721,13 +5721,13 @@ input:checked + label > .switch-inactive {
   display: block;
 }
 .tabs.primary {
-  background: #2199e8;
+  background: #00bcd4;
 }
 .tabs.primary > li > a {
   color: white;
 }
 .tabs.primary > li > a:hover, .tabs.primary > li > a:focus {
-  background: #1893e4;
+  background: #00b3c9;
 }
 
 .tabs-title {
@@ -5741,7 +5741,7 @@ input:checked + label > .switch-inactive {
   color: white;
 }
 .tabs-title > a:hover, .tabs-title > a:focus, .tabs-title > a[aria-selected="true"] {
-  background: #2199e8;
+  background: #00bcd4;
 }
 
 .tabs-content {
@@ -5768,10 +5768,10 @@ input:checked + label > .switch-inactive {
   margin-bottom: 0;
 }
 .tabs .tabs-title.is-active a {
-  box-shadow: 0 -3px 0 0 #777 inset;
+  box-shadow: 0 -3px 0 0 #ffeb3b inset;
 }
 .tabs .tabs-title > a:hover {
-  background: #1583cc;
+  background: #00a0b4;
 }
 
 .raised-button, .flat-button, .disabled-button {
@@ -5807,11 +5807,11 @@ input:checked + label > .switch-inactive {
   padding: 0.85em 1em;
   margin: 0 1rem 1rem 0;
   font-size: 0.9rem;
-  background: #2199e8;
+  background: #00bcd4;
   color: #fff;
 }
 .raised-button:hover, .raised-button:focus, .floating-action-button:hover, .floating-action-button:focus {
-  background: #1583cc;
+  background: #00a0b4;
   color: #fff;
 }
 
@@ -5836,7 +5836,7 @@ input:checked + label > .switch-inactive {
   color: #fff;
 }
 .flat-button, .flat-button:hover {
-  color: #2199e8;
+  color: #00bcd4;
 }
 
 .disabled-button {
@@ -5946,7 +5946,7 @@ input[type="text"].with-floating-label + label.floating-label, input[type="passw
   cursor: text;
 }
 input[type="text"].with-floating-label:focus + label.floating-label, input[type="text"].with-floating-label:valid + label.floating-label, input[type="password"].with-floating-label:focus + label.floating-label, input[type="password"].with-floating-label:valid + label.floating-label, input[type="date"].with-floating-label:focus + label.floating-label, input[type="date"].with-floating-label:valid + label.floating-label, input[type="datetime"].with-floating-label:focus + label.floating-label, input[type="datetime"].with-floating-label:valid + label.floating-label, input[type="datetime-local"].with-floating-label:focus + label.floating-label, input[type="datetime-local"].with-floating-label:valid + label.floating-label, input[type="month"].with-floating-label:focus + label.floating-label, input[type="month"].with-floating-label:valid + label.floating-label, input[type="week"].with-floating-label:focus + label.floating-label, input[type="week"].with-floating-label:valid + label.floating-label, input[type="email"].with-floating-label:focus + label.floating-label, input[type="email"].with-floating-label:valid + label.floating-label, input[type="number"].with-floating-label:focus + label.floating-label, input[type="number"].with-floating-label:valid + label.floating-label, input[type="search"].with-floating-label:focus + label.floating-label, input[type="search"].with-floating-label:valid + label.floating-label, input[type="tel"].with-floating-label:focus + label.floating-label, input[type="tel"].with-floating-label:valid + label.floating-label, input[type="time"].with-floating-label:focus + label.floating-label, input[type="time"].with-floating-label:valid + label.floating-label, input[type="url"].with-floating-label:focus + label.floating-label, input[type="url"].with-floating-label:valid + label.floating-label, input[type="color"].with-floating-label:focus + label.floating-label, input[type="color"].with-floating-label:valid + label.floating-label, textarea.with-floating-label:focus + label.floating-label, textarea.with-floating-label:valid + label.floating-label {
-  color: #2199e8;
+  color: #00bcd4;
   font-size: 0.75rem;
   top: -56px;
 }
@@ -6049,7 +6049,7 @@ label.radio.checked:after {
 }
 
 .summary {
-  border-left: 5px solid rgba(33, 153, 232, 0.4);
+  border-left: 5px solid rgba(0, 188, 212, 0.4);
   padding-left: 20px;
 }
 .summary h1 {
