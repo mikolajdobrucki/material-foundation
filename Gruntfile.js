@@ -23,7 +23,7 @@ module.exports = function(grunt) {
             'bower_components/foundation-6/js/vendor.js',
             'bower_components/foundation-6/js/foundation.js',
             // 'js/src/dropdown.js',
-            // 'js/src/ripple.js',
+            'js/src/ripple.js',
             // 'js/src/switches.js'
             'js/src/material-foundation.js'
           ]

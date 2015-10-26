@@ -1,16 +1,24 @@
 // Reference:
 // http://www.google.com/design/spec/components/tabs.html
 
+$tab-background: $primary-color;
+$tab-background-active: $primary-color;
+$tab-item-color: white;
+
+@include foundation-tabs;
+
 .tabs {
-  background: $primary-color;
-  dd { 
+  .tabs-title {
     a {
       @extend .text-button;
       padding-top: 1rem;
       margin-bottom: 0;
     }
-    &.active a {
+    &.is-active a {
       box-shadow: 0 -3px 0 0 $secondary-color inset;
+    }
+    & > a:hover {
+      background: scale-color($primary-color, $lightness: -15%);
     }
   }
 }
