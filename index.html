@@ -135,35 +135,26 @@
     </div>
 
     <div class="row column">
-      <h2 id="top-bars" class="demo-headline">Top Bars</h2>
+      <h2 id="top-bars" class="demo-headline">Toolbars</h2>
     </div>
 
     <div class="row column box">
-      <nav class="top-bar" data-topbar role="navigation">
-        <ul class="title-area">
-          <li class="name">
-            <h1><a href="#">App Name</a></h1>
-          </li>
-           <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-          <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
-        </ul>
-        <section class="top-bar-section">
-          <!-- Right Nav Section -->
-          <ul class="right">
-            <li><a href="#" class="has-icon"><i class="icon-search"></i><span class="show-for-small-only">Search</span></a></li>
-            <li class="has-dropdown">
-              <a href="#" class="has-icon"><i class="icon-shopping-cart"></i><span class="show-for-small-only">Shopping Cart</span></a>
-              <ul class="dropdown">
-                <li><a href="#">Item 1 – $34</a></li>
-                <li><a href="#">Item 2 – $12</a></li>
-              </ul>
-            </li>
+      <div class="top-bar">
+        <div class="top-bar-left">
+          <ul class="dropdown menu" data-dropdown-menu="" role="menubar">
+            <li class="menu-text" role="menuitem" tabindex="0">Site Title</li>
+            <li role="menuitem" tabindex="0"><a href="#" tabindex="-1">One</a></li>
+            <li role="menuitem" tabindex="0"><a href="#" tabindex="-1">Two</a></li>
+            <li role="menuitem" tabindex="0"><a href="#" tabindex="-1">Three</a></li>
           </ul>
-          <!-- Left Nav Section -->
-          <ul class="left">
+        </div>
+        <div class="top-bar-right">
+          <ul class="menu">
+            <li><input type="search" placeholder="Search"></li>
+            <li><button type="button" class="button">Search</button></li>
           </ul>
-        </section>
-      </nav>
+        </div>
+      </div>
     </div>
 
     <div class="row column">

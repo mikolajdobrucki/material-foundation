@@ -1,5 +1,8 @@
 // Reference:
-// http://www.google.com/design/spec/layout/metrics-keylines.html
+// http://www.google.com/design/spec/components/toolbars.html
+
+@include foundation-top-bar;
+@include foundation-menu;
 
 .top-bar {
   @extend .z-depth-1;
@@ -43,4 +46,3 @@
     }
   }
 }
-
