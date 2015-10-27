@@ -1,48 +1,31 @@
 // Reference:
 // http://www.google.com/design/spec/components/toolbars.html
 
+$topbar-padding: 0;
+$topbar-background: $primary-color;
+
 @include foundation-top-bar;
 @include foundation-menu;
 
 .top-bar {
+  height: 3.5rem;
   @extend .z-depth-1;
-  .top-bar-section {
-    .has-icon {
-      height: 64px;
-      overflow: hidden;
-      i,span {
-        display: block;
-        float: left;
-      }
-      i {
-        line-height: 64px;
-      }
-      span {
-        margin-left: 10px;
-        display: inline-block;
-      }
-    }
-    .dropdown {
-      @extend .z-depth-2;
-      li:not(.has-form):not(.active) > a:not(.button):hover {
-        background: $grey-200;
-        color: inherit;
-      }
-    }
+  a {
+    color: white;
+  }
+  i {
+    margin-top: -3px;
+  }
+  .dark {
+    color: $black-54;
   }
 }
-
-@media only screen and (max-width: 40em) {
-  .top-bar-section ul li > a {
-    color: $black-87;
-    &:hover {
-      background: $grey-200 !important;
-      color: $black-87 !important;
-    }
-    &.has-icon {
-      i, span {
-        line-height: 40px !important;
-      }
-    }
-  }
+.menu > li > a {
+  padding: 1rem;
+  height: 3.5rem;
+  line-height: inherit;
+}
+.text-title {
+  color: $white;
+  font-weight: 500;
 }
