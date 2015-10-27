@@ -5756,7 +5756,7 @@ button {
   padding: .5rem 0;
   overflow: hidden;
   width: auto;
-  transition: opacity 0.8s cubic-bezier(0.23, 1, 0.32, 1) 0ms, max-height 0.8s cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+  transition: opacity .4s ease-in-out, max-height .4s ease-in-out;
 }
 .dropdown-pane ul {
   margin: 0;
@@ -5773,12 +5773,12 @@ button {
   background: #eeeeee;
 }
 
-*[aria-expanded="false"] + .f-dropdown {
+.dropdown-pane[aria-hidden="true"] {
   max-height: 0;
   opacity: 0;
 }
 
-*[aria-expanded="true"] + .f-dropdown {
+.dropdown-pane[aria-hidden="false"] {
   max-height: 200px;
   opacity: 1;
 }
