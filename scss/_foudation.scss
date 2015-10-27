@@ -7,9 +7,6 @@ $foundation-version: '6.0.0-alpha.1';
 // Third-party libraries
 @import '../bower_components/foundation-6/scss/vendor/normalize';
 
-// Sass utilities
-@import '../bower_components/foundation-6/scss/util/util';
-
 // Global variables and styles
 @import '../bower_components/foundation-6/scss/global';
 
@@ -56,13 +53,13 @@ $foundation-version: '6.0.0-alpha.1';
 }
 
 @mixin foundation-everything {
-  @include foundation-global-styles;
-  @include foundation-grid;
+  // @include foundation-global-styles;
+  // @include foundation-grid;
   @include foundation-typography;
   // @include foundation-button;
   // @include foundation-forms;
-  @include foundation-visibility-classes;
-  @include foundation-float-classes;
+  // @include foundation-visibility-classes;
+  // @include foundation-float-classes;
   // @include foundation-accordion;
   // @include foundation-badge;
   // @include foundation-breadcrumbs;

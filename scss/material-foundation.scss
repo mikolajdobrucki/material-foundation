@@ -2,15 +2,21 @@
 @import
   "style/color";
 
+// Foudation Utilities
+@import
+  "foudation-util";
+
+// Foudation Customisation
+@import
+  "settings";
+
 // Foudation Files
 @import
   "foudation";
 
-// Foudation Customisation
-@import "settings";
-
 // Material Design - Core
 @import
+  "core/layout",
   "core/material",
   "core/animation";
 
