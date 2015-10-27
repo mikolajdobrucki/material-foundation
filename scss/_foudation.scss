@@ -52,18 +52,12 @@ $foundation-version: '6.0.0-alpha.1';
   font-family: "#{-zf-bp-serialize($breakpoints)}";
 }
 
+// These elements aren't styled with material design.
+// However, if you need them you can easily uncomment them
 @mixin foundation-everything {
-  // @include foundation-global-styles;
-  // @include foundation-grid;
-  @include foundation-typography;
-  // @include foundation-button;
-  @include foundation-forms;
-  // @include foundation-visibility-classes;
-  // @include foundation-float-classes;
   // @include foundation-accordion;
   // @include foundation-badge;
   // @include foundation-breadcrumbs;
-  // @include foundation-button-group;
   // @include foundation-callout;
   // @include foundation-close-button;
   // @include foundation-drilldown-menu;
@@ -72,7 +66,6 @@ $foundation-version: '6.0.0-alpha.1';
   // @include foundation-flex-video;
   // @include foundation-label;
   // @include foundation-media-object;
-  // @include foundation-menu;
   // @include foundation-off-canvas;
   // @include foundation-orbit;
   // @include foundation-pagination;
@@ -80,13 +73,9 @@ $foundation-version: '6.0.0-alpha.1';
   // @include foundation-slider;
   // @include foundation-sticky;
   // @include foundation-reveal;
-  // @include foundation-switch;
   // @include foundation-table;
-  // @include foundation-tabs;
   // @include foundation-thumbnail;
   // @include foundation-title-bar;
-  @include foundation-tooltip;
-  // @include foundation-top-bar;
 }
 
 @include foundation-everything;

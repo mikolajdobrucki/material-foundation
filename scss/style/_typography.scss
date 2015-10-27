@@ -1,6 +1,8 @@
 // Reference:
 // http://www.google.com/design/spec/style/typography.html
 
+@include foundation-typography;
+
 //Typography Styles
 .text-display-4 {
   font-size:   112px;
@@ -107,5 +109,5 @@
   margin-bottom: 15px;
   letter-spacing: 0;
   text-transform: uppercase;
-  font-weight: $global-weight-bold !important; 
+  font-weight: $global-weight-bold !important;
 }
