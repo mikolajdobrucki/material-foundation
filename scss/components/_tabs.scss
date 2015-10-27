@@ -18,7 +18,7 @@ $tab-item-color: white;
       box-shadow: 0 -3px 0 0 $secondary-color inset;
     }
     & > a:hover {
-      background: scale-color($primary-color, $lightness: -15%);
+      background: scale-color($primary-color, $lightness: -5%);
     }
   }
 }

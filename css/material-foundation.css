@@ -5350,7 +5350,7 @@ p + .stat {
   box-shadow: 0 -3px 0 0 #ffeb3b inset;
 }
 .tabs .tabs-title > a:hover {
-  background: #00a0b4;
+  background: #00b3c9;
 }
 
 .button-group {
@@ -5482,19 +5482,6 @@ p + .stat {
   padding-right: 1rem;
 }
 
-.floating-action-button {
-  overflow: hidden;
-  width: 56px;
-  height: 56px;
-  padding: 1rem;
-  margin: 0;
-}
-.floating-action-button i {
-  font-size: 24px;
-  text-align: center;
-  color: white;
-}
-
 .raised-button, .floating-action-button {
   display: inline-block;
   text-align: center;
@@ -5512,8 +5499,22 @@ p + .stat {
   color: #fff;
 }
 .raised-button:hover, .raised-button:focus, .floating-action-button:hover, .floating-action-button:focus {
-  background: #00a0b4;
+  background: #00b3c9;
   color: #fff;
+}
+
+.floating-action-button {
+  overflow: hidden;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  padding: 1rem;
+  margin: 0;
+}
+.floating-action-button i {
+  font-size: 24px;
+  text-align: center;
+  color: white;
 }
 
 .flat-button {
@@ -6241,7 +6242,7 @@ label.radio.checked:after {
   display: block;
   width: 0;
   height: 0;
-  border: inset 0.75rem;
+  border: inset 0;
   border-color: transparent transparent rgba(0, 0, 0, 0.87);
   border-bottom-style: solid;
   bottom: 100%;
@@ -6254,7 +6255,7 @@ label.radio.checked:after {
   display: block;
   width: 0;
   height: 0;
-  border: inset 0.75rem;
+  border: inset 0;
   border-color: rgba(0, 0, 0, 0.87) transparent transparent;
   border-top-style: solid;
   top: 100%;
@@ -6265,7 +6266,7 @@ label.radio.checked:after {
   display: block;
   width: 0;
   height: 0;
-  border: inset 0.75rem;
+  border: inset 0;
   border-color: transparent transparent transparent rgba(0, 0, 0, 0.87);
   border-left-style: solid;
   bottom: auto;
@@ -6278,7 +6279,7 @@ label.radio.checked:after {
   display: block;
   width: 0;
   height: 0;
-  border: inset 0.75rem;
+  border: inset 0;
   border-color: transparent rgba(0, 0, 0, 0.87) transparent transparent;
   border-right-style: solid;
   bottom: auto;
@@ -6286,6 +6287,14 @@ label.radio.checked:after {
   right: 100%;
   top: 50%;
   transform: translateY(-50%);
+}
+
+.tooltip {
+  background: rgba(97, 97, 97, 0.9);
+  border-radius: 3px;
+}
+.tooltip:before, .tooltip:after {
+  display: none;
 }
 
 .summary {
