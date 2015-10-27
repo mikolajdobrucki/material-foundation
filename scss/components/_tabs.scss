@@ -8,6 +8,7 @@ $tab-item-color: white;
 @include foundation-tabs;
 
 .tabs {
+  border: 0;
   .tabs-title {
     a {
       @extend .text-button;

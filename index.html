@@ -27,6 +27,8 @@
           <li><a href="#icons">Icons</a></li>
           <li><a href="#typography">Typography</a></li>
           <li><a href="#buttons">Buttons</a></li>
+          <li><a href="#fab">Buttons: Floating Action Button</a></li>
+          <li><a href="#cards">Cards</a></li>
           <li><a href="#tabs">Tabs</a></li>
           <li><a href="#menus">Menus</a></li>
           <li><a href="#top-bars">Top Bars</a></li>
@@ -41,34 +43,34 @@
       <h2 id="icons" class="demo-headline">Icons</h2>
     </div>
 
-    <div class="row box-white icons">
-      <div class="small-12 large-5 large-centered columns">
+    <div class="row column icons">
         <i class="icon-camera-alt"></i><i class="icon-search"></i>
         <i class="icon-mic"></i><i class="icon-mode-edit"></i>
         <i class="icon-mail"></i><i class="icon-person"></i>
-        <i class="icon-print"></i>
+        <i class="icon-print"></i><i class="icon-dashboard"></i>
         <i class="icon-notifications-off"></i><i class="icon-volume-up"></i>
         <i class="icon-timer"></i><i class="icon-delete"></i>
         <i class="icon-today"></i><i class="icon-folder"></i>
-        <i class="icon-assignment"></i>
+        <i class="icon-assignment"></i><i class="icon-android"></i>
         <i class="icon-movie"></i><i class="icon-cancel"></i>
         <i class="icon-map"></i><i class="icon-lock"></i>
-        <i class="icon-brightness-medium"></i><i class="icon-shopping-cart"></i>
-      </div>
+        <i class="icon-brightness-medium"></i><i class="icon-room"></i>
+        <i class="icon-explore"></i><i class="icon-favorite"></i>
+        <i class="icon-grade"></i><i class="icon-settings"></i>
     </div>
 
     <div class="row column">
       <h2 id="typography" class="demo-headline">Typography</h2>
     </div>
 
-    <div class="row box-white">
-      <div class="small-12 medium-6 columns">
+    <div class="row">
+      <div class="large-6 columns">
         <h1 class="text-display-4">Display 4</h1>
         <h2 class="text-display-3">Display 3</h2>
         <h3 class="text-display-2">Display 2</h3>
         <h4 class="text-display-1">Display 1</h4>
       </div>
-      <div class="small-12 medium-6 columns">
+      <div class="large-6 columns">
         <h5 class="text-headline">Headline</h5>
         <p class="text-title">Title</p>
         <p class="text-subhead">Subhead</p>
@@ -84,25 +86,47 @@
       <h2 id="buttons" class="demo-headline">Buttons</h2>
     </div>
 
-    <div class="row column box">
+    <div class="row column">
       <a class="raised-button ink">Raised Button</a>
       <a class="flat-button ink">Flat Button</a>
       <a class="disabled-button">Disabled Button</a>
     </div>
 
     <div class="row column">
-      <h2 id="fab" class="demo-headline">Foating Action Button</h2>
+      <h2 id="fab" class="demo-headline">Buttons: Floating Action Button</h2>
     </div>
 
-    <div class="row column box">
+    <div class="row column">
       <a class="floating-action-button"><i class="icon-search"></i></a>
+    </div>
+    </div>
+
+    <div class="row column">
+      <h2 id="cards" class="demo-headline">Cards</h2>
+    </div>
+
+    <div class="row">
+      <div class="medium-4 columns card end">
+        <h1 class="text-headline">Sample Card Name</h1>
+        <span class="text-caption">
+          November 10
+        </span>
+        <p class="text-body-1">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+        <p>
+          <a href="#" class="flat-button bottom-button">read more</a>
+          <a href="#" class="flat-button bottom-button">share</a>
+          <a href="#" class="link-icon"><i class="icon-more-vert float-right"></i></a>
+        </p>
+      </div>
     </div>
 
     <div class="row column">
       <h2 id="tabs" class="demo-headline">Tabs</h2>
     </div>
 
-    <div class="row column box">
+    <div class="row column">
       <ul class="tabs" data-tabs id="material-tabs">
         <li class="tabs-title is-active"><a href="#panel1" class="ink color">no. 1</a></li>
         <li class="tabs-title"><a href="#panel2" class="ink ink-color">item two</a></li>
@@ -129,7 +153,7 @@
       <h2 id="menus" class="demo-headline">Menus</h2>
     </div>
 
-    <div class="row column box">
+    <div class="row column">
       <button class="raised-button ink" type="button" data-toggle="example-dropdown">Toggle Dropdown</button>
       <div class="dropdown-pane" id="example-dropdown" data-dropdown>
         <ul>
@@ -144,7 +168,7 @@
       <h2 id="top-bars" class="demo-headline">Toolbars</h2>
     </div>
 
-    <div class="row column box">
+    <div class="row column">
       <div class="top-bar">
         <div class="top-bar-left">
           <ul class="dropdown menu" data-dropdown-menu="" role="menubar">
@@ -164,35 +188,32 @@
       <h2 id="text-fields" class="demo-headline">Text Fields</h2>
     </div>
 
-    <div class="row column box-white">
-        <div class="large-12 columns">
-          <input type="text" id="input_2" placeholder="Hint Text" />
-          <input type="text" id="input_1" class="with-floating-label" required />
-          <label for="input_1" class="floating-label">Floating Label Text</label>
-        </div>
-      </div>
+    <div class="row column">
+      <input type="text" id="input_2" placeholder="Hint Text" />
+      <input type="text" id="input_1" class="with-floating-label" required />
+      <label for="input_1" class="floating-label">Floating Label Text</label>
     </div>
 
     <div class="row column">
       <h2 id="switches" class="demo-headline">Switches</h2>
     </div>
 
-    <div class="row box-white">
-      <div class="small-12 medium-4 columns">
+    <div class="row">
+      <div class="medium-4 columns">
         <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed" class="radio">Radio 1</label>
         <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue" class="radio">Radio 2</label>
       </div>
-      <div class="small-12 medium-4 columns">
+      <div class="medium-4 columns">
         <input id="checkbox1" type="checkbox"><label for="checkbox1" class="checkbox">Checkbox 1</label>
         <input id="checkbox2" type="checkbox"><label for="checkbox2" class="checkbox">Checkbox 2</label>
       </div>
-      <div class="small-12 medium-2 columns">
+      <div class="medium-2 columns">
         <div class="switch">
           <input class="switch-input" id="sampleSwitch" type="checkbox" name="sampleSwitch">
           <label class="switch-paddle" for="sampleSwitch"></label>
         </div>
       </div>
-      <div class="small-12 medium-2 columns">
+      <div class="medium-2 columns">
         <div class="switch">
           <input class="switch-input" id="sampleSwitch2" type="checkbox" name="sampleSwitch2">
           <label class="switch-paddle" for="sampleSwitch2"></label>
@@ -204,13 +225,10 @@
       <h2 id="tooltips" class="demo-headline">Tooltips</h2>
     </div>
 
-    <div class="row column box">
-        <div class="large-12 columns">
-          <span data-tooltip aria-haspopup="true" class="raised-button" title="Tooltips Text">
-            button with a tooltip
-          </span>
-        </div>
-      </div>
+    <div class="row column">
+      <span data-tooltip aria-haspopup="true" class="raised-button" title="Tooltips Text">
+        button with a tooltip
+      </span>
     </div>
 
     <script src="js/material-foundation.js"></script>

@@ -8,6 +8,7 @@ input[type="text"], input[type="password"], input[type="date"], input[type="date
   margin: rem-calc(28) 0 rem-calc(8);
   border-bottom: 1px solid $grey-300;
   border-radius: 0;
+  background: transparent;
   &::-webkit-input-placeholder,&::-webkit-input-placeholder {
     color: $black-26;
   }
@@ -17,6 +18,7 @@ input[type="text"], input[type="password"], input[type="date"], input[type="date
   &:focus {
     border-bottom: 2px solid $primary-color;
     position: relative; top: 1px;
+    background: transparent;
   }
   &.with-floating-label + label.floating-label {
     font-size: rem-calc(16);
