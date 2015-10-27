@@ -6160,21 +6160,20 @@ label.checkbox.checked:before {
 }
 
 label.radio:before {
-  width: 0px;
-  height: 0px;
-  border: 0px solid #009688;
-  position: absolute;
-  top: 9px;
-  left: 9px;
-}
-
-label.radio.checked:before {
-  width: 6px;
-  height: 6px;
-  border: 5px solid #009688;
+  width: 10px;
+  height: 10px;
+  background: #009688;
+  border-radius: 50%;
   position: absolute;
   top: 4px;
   left: 4px;
+  transform: scale(0.1);
+  opacity: 0;
+}
+
+label.radio.checked:before {
+  opacity: 1;
+  transform: scale(1);
 }
 
 label.radio:before, label.radio:after {
@@ -6196,6 +6195,9 @@ label.radio.checked:after {
   border-color: #009688;
 }
 
+.switch {
+  margin-top: 3px;
+}
 .switch input + label {
   height: 0.875rem;
   border-radius: 0.4375rem;
