@@ -410,7 +410,7 @@ th {
   width: 0;
   height: 0;
   border: inset 5px;
-  border-color: #00bcd4 transparent transparent;
+  border-color: #2199e8 transparent transparent;
   border-top-style: solid;
 }
 .dropdown.menu .has-submenu.is-right-arrow > a::after {
@@ -419,7 +419,7 @@ th {
   width: 0;
   height: 0;
   border: inset 5px;
-  border-color: transparent #00bcd4 transparent transparent;
+  border-color: transparent #2199e8 transparent transparent;
   border-right-style: solid;
   float: left;
   margin-left: 0;
@@ -431,7 +431,7 @@ th {
   width: 0;
   height: 0;
   border: inset 5px;
-  border-color: transparent transparent transparent #00bcd4;
+  border-color: transparent transparent transparent #2199e8;
   border-left-style: solid;
 }
 .dropdown.menu .submenu {
@@ -504,11 +504,11 @@ body {
 body {
   padding: 0;
   margin: 0;
-  font-family: Roboto, Noto, sans-serif;
-  font-weight: 400;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-weight: normal;
   line-height: 1.5;
-  color: rgba(0, 0, 0, 0.87);
-  background: #eeeeee;
+  color: black;
+  background: white;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -555,7 +555,7 @@ button {
 }
 
 .row {
-  max-width: rem-calc(1200);
+  max-width: 75rem;
   margin-left: auto;
   margin-right: auto;
 }
@@ -1528,7 +1528,7 @@ i {
 
 strong,
 b {
-  font-weight: 500;
+  font-weight: bold;
   line-height: inherit;
 }
 
@@ -1543,8 +1543,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: Roboto, Noto, sans-serif;
-  font-weight: 400;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-weight: normal;
   font-style: normal;
   color: inherit;
   text-rendering: optimizeLegibility;
@@ -1613,20 +1613,20 @@ h6 small {
   }
 }
 a {
-  color: #00bcd4;
+  color: #2199e8;
   text-decoration: none;
   line-height: inherit;
   cursor: pointer;
 }
 a:hover, a:focus {
-  color: #00a2b6;
+  color: #1585cf;
 }
 a img {
   border: 0;
 }
 
 hr {
-  max-width: rem-calc(1200);
+  max-width: 75rem;
   height: 0;
   border-top: 0;
   border-bottom: 1px solid #cacaca;
@@ -1666,7 +1666,7 @@ dl {
 }
 dl dt {
   margin-bottom: 0.3rem;
-  font-weight: 500;
+  font-weight: bold;
 }
 
 blockquote {
@@ -1689,15 +1689,15 @@ cite:before {
 }
 
 abbr {
-  color: rgba(0, 0, 0, 0.87);
+  color: black;
   cursor: help;
-  border-bottom: 1px dotted rgba(0, 0, 0, 0.87);
+  border-bottom: 1px dotted black;
 }
 
 code {
   font-family: Consolas, "Liberation Mono", Courier, monospace;
-  font-weight: 400;
-  color: rgba(0, 0, 0, 0.87);
+  font-weight: normal;
+  color: black;
   background-color: #f3f3f3;
   border: 1px solid #cacaca;
   padding: 0.125rem 0.3125rem 0.0625rem;
@@ -1707,14 +1707,14 @@ kbd {
   padding: 0.125rem 0.25rem 0;
   margin: 0;
   background-color: #f3f3f3;
-  color: rgba(0, 0, 0, 0.87);
+  color: black;
   font-family: Consolas, "Liberation Mono", Courier, monospace;
 }
 
 .subheader {
   margin-top: 0.2rem;
   margin-bottom: 0.5rem;
-  font-weight: 400;
+  font-weight: normal;
   line-height: 1.4;
   color: #8a8a8a;
 }
@@ -2048,7 +2048,7 @@ p + .stat {
   font-size: inherit;
 }
 .button-group .button:not(:last-child) {
-  border-right: 1px solid #eeeeee;
+  border-right: 1px solid white;
 }
 .button-group.tiny {
   font-size: 0.6rem;
@@ -2075,43 +2075,43 @@ p + .stat {
   width: 16.66667%;
 }
 .button-group.primary .button {
-  background: #00bcd4;
+  background: #2199e8;
   color: #fff;
 }
 .button-group.primary .button:hover, .button-group.primary .button:focus {
-  background: #0096aa;
+  background: #147cc0;
   color: #fff;
 }
 .button-group.secondary .button {
-  background: #ffeb3b;
+  background: #777;
   color: #fff;
 }
 .button-group.secondary .button:hover, .button-group.secondary .button:focus {
-  background: #fbe200;
+  background: #5f5f5f;
   color: #fff;
 }
 .button-group.success .button {
-  background: #259b24;
+  background: #3adb76;
   color: #fff;
 }
 .button-group.success .button:hover, .button-group.success .button:focus {
-  background: #1e7c1d;
+  background: #22bb5b;
   color: #fff;
 }
 .button-group.alert .button {
-  background: #e51c23;
+  background: #ec5840;
   color: #fff;
 }
 .button-group.alert .button:hover, .button-group.alert .button:focus {
-  background: #b8151b;
+  background: #da3116;
   color: #fff;
 }
 .button-group.warning .button {
-  background: #ffc107;
+  background: #ffae00;
   color: #fff;
 }
 .button-group.warning .button:hover, .button-group.warning .button:focus {
-  background: #d29d00;
+  background: #cc8b00;
   color: #fff;
 }
 .button-group.stacked .button, .button-group.stacked-for-small .button {
@@ -2123,12 +2123,12 @@ p + .stat {
     width: auto;
   }
   .button-group.stacked-for-small .button:not(:last-child) {
-    border-right: 1px solid #eeeeee;
+    border-right: 1px solid white;
   }
 }
 
 .dropdown-pane {
-  background-color: #eeeeee;
+  background-color: white;
   border: 1px solid #cacaca;
   display: block;
   padding: 1rem;
@@ -2154,7 +2154,7 @@ p + .stat {
 }
 
 .title-bar {
-  background: rgba(0, 0, 0, 0.87);
+  background: black;
   color: white;
   padding: 0.5rem;
 }
@@ -2244,7 +2244,7 @@ p + .stat {
 }
 
 .tooltip {
-  background-color: rgba(0, 0, 0, 0.87);
+  background-color: black;
   color: white;
   font-size: 80%;
   padding: 0.75rem;
@@ -2259,7 +2259,7 @@ p + .stat {
   width: 0;
   height: 0;
   border: inset 0.75rem;
-  border-color: transparent transparent rgba(0, 0, 0, 0.87);
+  border-color: transparent transparent black;
   border-bottom-style: solid;
   bottom: 100%;
   position: absolute;
@@ -2272,7 +2272,7 @@ p + .stat {
   width: 0;
   height: 0;
   border: inset 0.75rem;
-  border-color: rgba(0, 0, 0, 0.87) transparent transparent;
+  border-color: black transparent transparent;
   border-top-style: solid;
   top: 100%;
   bottom: auto;
@@ -2283,7 +2283,7 @@ p + .stat {
   width: 0;
   height: 0;
   border: inset 0.75rem;
-  border-color: transparent transparent transparent rgba(0, 0, 0, 0.87);
+  border-color: transparent transparent transparent black;
   border-left-style: solid;
   bottom: auto;
   left: 100%;
@@ -2296,7 +2296,7 @@ p + .stat {
   width: 0;
   height: 0;
   border: inset 0.75rem;
-  border-color: transparent rgba(0, 0, 0, 0.87) transparent transparent;
+  border-color: transparent black transparent transparent;
   border-right-style: solid;
   bottom: auto;
   left: auto;
@@ -5692,11 +5692,11 @@ p + .stat {
   padding: 0.85em 1em;
   margin: 0 1rem 1rem 0;
   font-size: 0.9rem;
-  background: #00bcd4;
+  background: #2199e8;
   color: #fff;
 }
 .raised-button:hover, .raised-button:focus, .floating-action-button:hover, .floating-action-button:focus {
-  background: #00a0b4;
+  background: #1583cc;
   color: #fff;
 }
 
@@ -5879,7 +5879,7 @@ input + .switch-paddle {
   transform: translate3d(0, 0, 0);
 }
 input:checked ~ .switch-paddle {
-  background: #00bcd4;
+  background: #2199e8;
 }
 input:checked ~ .switch-paddle::after {
   left: 2.25rem;
