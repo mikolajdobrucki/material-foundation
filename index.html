@@ -42,7 +42,7 @@
     </div>
 
     <div class="row box-white icons">
-      <div class="small-12 medium-5 medium-centered columns">
+      <div class="small-12 large-5 large-centered columns">
         <i class="icon-camera-alt"></i><i class="icon-search"></i>
         <i class="icon-mic"></i><i class="icon-mode-edit"></i>
         <i class="icon-mail"></i><i class="icon-person"></i>
@@ -124,12 +124,14 @@
     </div>
 
     <div class="row column box">
-      <button href="#" data-dropdown="drop1" aria-controls="drop1" aria-expanded="false" class="raised-button ink">Options</button>
-      <ul id="drop1" data-dropdown-content class="f-dropdown" aria-hidden="true" tabindex="-1">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Back</a></li>
-        <li><a href="#">Foreward</a></li>
-      </ul>
+      <button class="raised-button" type="button" data-toggle="example-dropdown">Toggle Dropdown</button>
+      <div class="dropdown-pane" id="example-dropdown" data-dropdown>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Back</a></li>
+          <li><a href="#">Foreward</a></li>
+        </ul>
+      </div>
     </div>
 
     <div class="row column">

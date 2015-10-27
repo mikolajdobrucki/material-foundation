@@ -2361,7 +2361,7 @@ button {
   box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.32), 0 1px 5px 0 rgba(0, 0, 0, 0.24);
 }
 
-.z-depth-2, .raised-button:active, .floating-action-button:active, .f-dropdown, .top-bar .top-bar-section .dropdown {
+.z-depth-2, .raised-button:active, .floating-action-button:active, .dropdown-pane, .top-bar .top-bar-section .dropdown {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 3px 10px 0 rgba(0, 0, 0, 0.09);
 }
 
@@ -5749,16 +5749,28 @@ button {
   color: rgba(0, 0, 0, 0.26);
 }
 
-.f-dropdown {
+.dropdown-pane {
   border-radius: 3px;
+  background: white;
+  border: 0;
   padding: .5rem 0;
   overflow: hidden;
+  width: auto;
   transition: opacity 0.8s cubic-bezier(0.23, 1, 0.32, 1) 0ms, max-height 0.8s cubic-bezier(0.23, 1, 0.32, 1) 0ms;
 }
-.f-dropdown li a {
+.dropdown-pane ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.dropdown-pane li a {
   padding: .75rem 1.5rem;
   font-size: 0.8125rem;
   color: rgba(0, 0, 0, 0.87);
+  display: block;
+}
+.dropdown-pane li a:hover {
+  background: #eeeeee;
 }
 
 *[aria-expanded="false"] + .f-dropdown {
