@@ -4822,7 +4822,7 @@ hr {
   height: 0;
   border-top: 0;
   border-bottom: 1px solid #eeeeee;
-  margin: 1.25rem 0;
+  margin: 1.25rem auto;
   clear: both;
 }
 
@@ -5410,7 +5410,7 @@ p + .stat {
   transition: all 0.25s ease-out;
   vertical-align: middle;
   border: 1px solid transparent;
-  border-radius: 0;
+  border-radius: 2px;
   padding: 0.85em 1em;
   margin: 0 1rem 1rem 0;
   font-size: 0.9rem;
@@ -5448,7 +5448,7 @@ p + .stat {
   transition: all 0.25s ease-out;
   vertical-align: middle;
   border: 1px solid transparent;
-  border-radius: 0;
+  border-radius: 2px;
   padding: 0.85em 1em;
   margin: 0 1rem 1rem 0;
   font-size: 0.9rem;
@@ -5475,7 +5475,7 @@ p + .stat {
   transition: all 0.25s ease-out;
   vertical-align: middle;
   border: 1px solid transparent;
-  border-radius: 0;
+  border-radius: 2px;
   padding: 0.85em 1em;
   margin: 0 1rem 1rem 0;
   font-size: 0.9rem;
@@ -5669,9 +5669,9 @@ p + .stat {
   font-weight: bold;
   color: inherit;
   line-height: 1;
-  padding: 0.7rem 1rem;
   padding-top: 0;
   padding-bottom: 0;
+  padding: 0.7rem 1rem;
 }
 
 .top-bar {
