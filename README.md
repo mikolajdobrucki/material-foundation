@@ -7,7 +7,7 @@ Material Design version of Foudation Framework by Zurb
 
 **Supported Foundation Version**: 6.0.3
 
-DEMO: [http://eucalyptuss.github.io/material-foundation/](http://eucalyptuss.github.io/material-foundation/)
+**Demo**: [http://eucalyptuss.github.io/material-foundation/](http://eucalyptuss.github.io/material-foundation/)
 
 ## Requirements
 
@@ -45,6 +45,6 @@ scss/
   * `_foudation.scss`: the rest of original Foundation's code
   * `scss/app.scss`: Application styles go here
 
-## Component ##
+## Components ##
 
 Please note that not all the Foundation components are 'materialised'. By default, Material Foundation include only the styled ones. However if you want to use some of the other compoments all you must do is uncommenting them in `_foudation.scss`.
