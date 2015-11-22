@@ -9,16 +9,26 @@ header {
   overflow: hidden;
   h1 {
     @extend .text-display-3;
-    margin-top: 100px;
+    margin-top: 90px;
   }
   h2 {
     @extend .text-display-1;
+    margin-bottom: 30px;
   }
-  h1, h2 {
+  h1, h2, .text-button {
     color: $white;
   }
   img {
     margin-bottom: -2px;
+  }
+  .icon-link {
+    margin-right: 5px;
+  }
+}
+.download {
+  .floating-action-accent-button {
+    float: right;
+    margin-top: -30px;
   }
 }
 .summary {
