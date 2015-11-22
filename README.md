@@ -1,7 +1,11 @@
-material-foundation
+Material Foundation
 ===================
 
+![Material Foundation](https://github.com/eucalyptuss/material-foundation/raw/master/images/cover.png?raw=true)
+
 Material Design version of Foudation Framework by Zurb
+
+**Supported Foundation Version**: 6.0.3
 
 DEMO: [http://eucalyptuss.github.io/material-foundation/](http://eucalyptuss.github.io/material-foundation/)
 
@@ -33,6 +37,7 @@ to compile files manually
 ## Directory Structure
 
 scss/
+
   * `material-foundation.scss`: Main CSS file
   * `demo.scss`: CSS for the preview purposes, don't mind it
   * `scss/_settings.scss`: here we're adjusting Foundation as far as possible to avoid unnecessary overwriting
