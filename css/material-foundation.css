@@ -1549,7 +1549,7 @@ button {
 .theme-light .text-display-4, .theme-light .text-display-3, .theme-light .text-display-2, .theme-light .text-display-1, .theme-light .text-caption {
   color: rgba(0, 0, 0, 0.54);
 }
-.theme-light .text-headline, .theme-light .text-title, .theme-light .text-subhead, .theme-light .summary h1, .summary .theme-light h1, .theme-light .text-body-2, .theme-light .text-body-1, .theme-light .text-menu, .theme-light .text-button, .theme-light .tabs .tabs-title a, .tabs .tabs-title .theme-light a, .theme-light .raised-button, .theme-light .flat-button, .theme-light .disabled-button, .theme-light i {
+.theme-light .text-headline, .theme-light .text-title, .theme-light .text-subhead, .theme-light .summary h1, .summary .theme-light h1, .theme-light .text-body-2, .theme-light .text-body-1, .theme-light .text-menu, .theme-light .text-button, .theme-light .tabs .tabs-title a, .tabs .tabs-title .theme-light a, .theme-light .raised-button, .theme-light .raised-accent-button, .theme-light .flat-button, .theme-light .disabled-button, .theme-light i {
   color: rgba(0, 0, 0, 0.87);
 }
 
@@ -1559,11 +1559,11 @@ button {
 .theme-dark .text-display-4, .theme-dark .text-display-3, .theme-dark .text-display-2, .theme-dark .text-display-1, .theme-dark .text-caption {
   color: rgba(255, 255, 255, 0.54);
 }
-.theme-dark .text-headline, .theme-dark .text-title, .theme-dark .text-subhead, .theme-dark .summary h1, .summary .theme-dark h1, .theme-dark .text-body-2, .theme-dark .text-body-1, .theme-dark .text-menu, .theme-dark .text-button, .theme-dark .tabs .tabs-title a, .tabs .tabs-title .theme-dark a, .theme-dark .raised-button, .theme-dark .flat-button, .theme-dark .disabled-button, .theme-dark i {
+.theme-dark .text-headline, .theme-dark .text-title, .theme-dark .text-subhead, .theme-dark .summary h1, .summary .theme-dark h1, .theme-dark .text-body-2, .theme-dark .text-body-1, .theme-dark .text-menu, .theme-dark .text-button, .theme-dark .tabs .tabs-title a, .tabs .tabs-title .theme-dark a, .theme-dark .raised-button, .theme-dark .raised-accent-button, .theme-dark .flat-button, .theme-dark .disabled-button, .theme-dark i {
   color: rgba(255, 255, 255, 0.87);
 }
 
-.z-depth-1, .raised-button, .floating-action-button, .card, .top-bar {
+.z-depth-1, .raised-button, .floating-action-button, .raised-accent-button, .floating-action-accent-button, .card, .top-bar {
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.13), 0 1px 5px 0 rgba(0, 0, 0, 0.08);
 }
 
@@ -1571,7 +1571,7 @@ button {
   box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.32), 0 1px 5px 0 rgba(0, 0, 0, 0.24);
 }
 
-.z-depth-2, .raised-button:active, .floating-action-button:active, .dropdown-pane {
+.z-depth-2, .raised-button:active, .floating-action-button:active, .raised-accent-button:active, .floating-action-accent-button:active, .dropdown-pane {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 3px 10px 0 rgba(0, 0, 0, 0.09);
 }
 
@@ -5180,7 +5180,7 @@ p + .stat {
   font-weight: 500;
 }
 
-.text-button, .tabs .tabs-title a, .raised-button, .flat-button, .disabled-button {
+.text-button, .tabs .tabs-title a, .raised-button, .raised-accent-button, .flat-button, .disabled-button {
   font-size: 14px;
   line-height: 20px;
   padding-top: 5px;
@@ -5394,7 +5394,7 @@ p + .stat {
   width: 400px;
 }
 
-.raised-button, .flat-button, .disabled-button {
+.raised-button, .raised-accent-button, .flat-button, .disabled-button {
   min-width: 64px;
   overflow: hidden;
   padding-left: 1rem;
@@ -5425,7 +5425,34 @@ p + .stat {
   color: #fff;
 }
 
-.floating-action-button {
+.raised-accent-button, .floating-action-accent-button {
+  display: inline-block;
+  text-align: center;
+  line-height: 1;
+  cursor: pointer;
+  -webkit-appearance: none;
+  transition: all 0.25s ease-out;
+  vertical-align: middle;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  padding: 0.85em 1em;
+  margin: 0 1rem 1rem 0;
+  font-size: 0.9rem;
+  background: #ffeb3b;
+  color: #fff;
+}
+[data-whatinput="mouse"] .raised-accent-button, [data-whatinput="mouse"] .floating-action-accent-button {
+  outline: 0;
+}
+.raised-accent-button:hover, .raised-accent-button:focus, .floating-action-accent-button:hover, .floating-action-accent-button:focus {
+  background: #ffe92b;
+  color: #fff;
+}
+.raised-accent-button, .raised-accent-button:hover, .floating-action-accent-button, .floating-action-accent-button:hover {
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.floating-action-button, .floating-action-accent-button {
   overflow: hidden;
   width: 56px;
   height: 56px;
@@ -5433,10 +5460,17 @@ p + .stat {
   padding: 1rem;
   margin: 0;
 }
-.floating-action-button i {
+.floating-action-button i, .floating-action-accent-button i {
   font-size: 24px;
   text-align: center;
+}
+
+.floating-action-button i {
   color: white;
+}
+
+.floating-action-accent-button i {
+  color: rgba(0, 0, 0, 0.87);
 }
 
 .flat-button {
