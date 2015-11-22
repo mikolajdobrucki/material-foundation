@@ -1,0 +1,31 @@
+// Reference:
+// http://www.google.com/design/spec/components/toolbars.html
+
+$topbar-padding: 0;
+$topbar-background: $primary-color;
+
+@include foundation-top-bar;
+@include foundation-menu;
+
+.top-bar {
+  height: 3.5rem;
+  @extend .z-depth-1;
+  a {
+    color: white;
+  }
+  i {
+    margin-top: -3px;
+  }
+  .dark {
+    color: $black-54;
+  }
+  .text-title {
+    color: $white;
+    font-weight: 500;
+  }
+}
+.menu > li > a {
+  padding: 1rem;
+  height: 3.5rem;
+  line-height: inherit;
+}

@@ -6,32 +6,37 @@ body {
 }
 header {
   background: $primary-color;
-  padding: 50px 0;
+  overflow: hidden;
   h1 {
     @extend .text-display-3;
+    margin-top: 90px;
   }
   h2 {
     @extend .text-display-1;
+    margin-bottom: 30px;
   }
-  h1, h2 {
+  h1, h2, .text-button {
     color: $white;
+  }
+  img {
+    margin-bottom: -2px;
+  }
+  .icon-link {
+    margin-right: 5px;
+  }
+}
+.download {
+  .floating-action-accent-button {
+    float: right;
+    margin-top: -30px;
   }
 }
 .summary {
   margin-top: 50px;
 }
-.box, .box-white {
-  padding: 20px;
-  margin: {
-    left: 0px !important;
-    right: 0px !important;
-  }
-}
-.box {
-  background: $grey-200;
-}
-.box-white {
-  background: $white;
+hr {
+  border-bottom: 1px solid $black-12;
+  margin: 50px auto 0;
 }
 h2.demo-headline {
   @extend .text-headline;
@@ -53,4 +58,7 @@ h2.demo-headline {
   overflow: hidden;
   margin: 10px;
   color: $grey-500;
+}
+.floating-action-button {
+  margin-right: 15px;
 }

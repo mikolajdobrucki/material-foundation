@@ -14,24 +14,41 @@ module.exports = function(grunt) {
     },
     uglify: {
       options: {
-        mangle: false
+        mangle: false,
+        beautify: true
       },
       my_target: {
         files: {
           'js/material-foundation.js': [
-            'bower_components/jquery/dist/jquery.min.js',
-            'bower_components/fastclick/lib/fastclick.js',
-            'bower_components/foundation/js/foundation.js',
-            'js/src/dropdown.js',
-            'js/src/material-foundation.js',
+            'bower_components/what-input/what-input.js',
+            'bower_components/jquery/dist/jquery.js',
+            'bower_components/foundation-sites/dist/foundation.js',
             'js/src/ripple.js',
-            'js/src/switches.js'
+            'js/src/switches.js',
+            'js/src/material-foundation.js'
           ]
         }
       }
-    }
+    },
+    watch: {
+      scripts: {
+        files: '**/*.js',
+        tasks: ['uglify'],
+        options: {
+          interrupt: true,
+        },
+      },
+      css: {
+        files: '**/*.scss',
+        tasks: ['sass'],
+        options: {
+          livereload: true,
+        },
+      },
+    },
   });
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.registerTask('default', ['sass','uglify']);
 };

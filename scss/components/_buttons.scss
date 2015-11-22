@@ -1,7 +1,12 @@
 // Reference:
 // http://www.google.com/design/spec/components/buttons.html
 
-.raised-button, .flat-button, .disabled-button {
+$button-background-hover: scale-color($button-background, $lightness: -5%);
+
+@include foundation-button-group;
+@include foundation-dropdown;
+
+.raised-button, .raised-accent-button, .flat-button, .disabled-button {
   min-width: 64px;
   overflow: hidden;
   padding: {
@@ -9,51 +14,48 @@
     right: 1rem;
   }
 }
-.raised-button, .flat-button {
-  @include button($radius: true);
+.raised-button, .raised-accent-button, .flat-button, .disabled-button {
   @extend .text-button;
-  margin: 0;
-}
-.floating-action-button {
-  @include button($radius: $global-rounded);
-  overflow: hidden;
-  width: 56px;
-  height: 56px;
-  padding: 1rem;
-  margin: 0;
-  i {
-    font-size: 24px;
-    text-align: center;
-    color: white;
-  }
 }
 .raised-button, .floating-action-button {
+  @include button;
+}
+.raised-accent-button, .floating-action-accent-button {
+  @include button($background: $secondary-color, $background-hover: scale-color($secondary-color, $lightness: -5%), $color: $black-87);
+  &,&:hover {
+    color: $black-87;
+  }
+}
+.raised-button, .floating-action-button, .raised-accent-button, .floating-action-accent-button {
   @extend .z-depth-1;
   &:active {
     @extend .z-depth-2;
   }
 }
-.flat-button, .disabled-button {
-  background: transparent;
+.floating-action-button, .floating-action-accent-button {
+  overflow: hidden;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  padding: 1rem;
+  margin: 0;
+  i {
+    font-size: 24px;
+    text-align: center;
+  }
+}
+.floating-action-button i {
+  color: white;
+}
+.floating-action-accent-button i {
+  color: $black-87;
 }
 .flat-button {
-  &, &:hover, &:active {
-    color: $primary-color;
-  }
-  &:hover {
-    background: rgba(#999, .2);
-  }
-  &:active {
-    background: rgba(#999, .4);
-  }
+  @include button($background: transparent, $background-hover: rgba(#999, .2), $color: $primary-color);
+  &,&:hover { color: $primary-color; }
 }
 .disabled-button {
-  @include button($radius: true, $disabled: true);
-  @extend .text-button;
-  margin: 0;
-  &, &:hover, &:active {
-    background: transparent;
-    color: $black-26;
-  }
+  @include button($background: transparent, $background-hover: transparent, $color: $black-26);
+  &,&:hover { color: $black-26; }
   cursor: not-allowed !important;
 }

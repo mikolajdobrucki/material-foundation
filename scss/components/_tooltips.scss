@@ -1,6 +1,14 @@
 // Reference:
 // http://www.google.com/design/spec/components/tooltips.html
 
+
+$tooltip-pip-width: 0;
+@include foundation-tooltip;
+
 .tooltip {
-  @include radius($tooltip-radius);
+  background: rgba($grey-700,.9);
+  border-radius: 3px;
+  &:before, &:after {
+    display: none;
+  }
 }
