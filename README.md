@@ -47,4 +47,4 @@ scss/
 
 ## Components ##
 
-Please note that not all the Foundation components are 'materialised'. By default, Material Foundation include only the styled ones. However if you want to use some of the other components all you must do is uncommenting them in `_foundation.scss`.
+Please note that not all the Foundation components are 'materialised'. By default, Material Foundation include only the styled ones. However if you want to use some of the other components all you must do is uncommenting them in : `_foundation.scss`.
