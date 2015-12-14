@@ -41,8 +41,8 @@ scss/
   * `material-foundation.scss`: Main CSS file
   * `demo.scss`: CSS for the preview purposes, don't mind it
   * `scss/_settings.scss`: here we're adjusting Foundation as far as possible to avoid unnecessary overwriting
-  * `_foudation-util.scss`: here Foundation's SASS utilities are imported
-  * `_foudation.scss`: the rest of original Foundation's code
+  * `_foundation-util.scss`: here Foundation's SASS utilities are imported
+  * `_foundation.scss`: the rest of original Foundation's code
   * `scss/app.scss`: Application styles go here
 
 ## Components ##
