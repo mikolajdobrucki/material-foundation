@@ -28,7 +28,7 @@ While you're working on your project, run:
 
 `grunt watch`
 
-o make grunt watch and compile all your CSS and javascript, or run:
+or make grunt watch and compile all your CSS and javascript, or run:
 
 `grunt`
 
@@ -47,4 +47,4 @@ scss/
 
 ## Components ##
 
-Please note that not all the Foundation components are 'materialised'. By default, Material Foundation include only the styled ones. However if you want to use some of the other compoments all you must do is uncommenting them in `_foudation.scss`.
+Please note that not all the Foundation components are 'materialised'. By default, Material Foundation include only the styled ones. However if you want to use some of the other components all you must do is uncommenting them in : `_foundation.scss`.
