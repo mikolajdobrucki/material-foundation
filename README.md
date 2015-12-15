@@ -3,7 +3,7 @@ Material Foundation
 
 ![Material Foundation](https://github.com/eucalyptuss/material-foundation/raw/master/images/cover.png?raw=true)
 
-Material Design version of Foudation Framework by Zurb
+Material Design version of Foundation Framework by Zurb
 
 **Supported Foundation Version**: 6.0.3
 
