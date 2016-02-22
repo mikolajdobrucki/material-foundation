@@ -5,7 +5,7 @@ Material Foundation
 
 Material Design version of Foundation Framework by Zurb
 
-**Supported Foundation Version**: 6.0.3
+**Supported Foundation Version**: 6.0.6
 
 **Demo**: [http://eucalyptuss.github.io/material-foundation/](http://eucalyptuss.github.io/material-foundation/)
 

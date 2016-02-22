@@ -2,11 +2,6 @@
 // foundation.zurb.com
 // Licensed under MIT Open Source
 
-$foundation-version: '6.0.0-alpha.1';
-
-// Third-party libraries
-@import '../bower_components/foundation-sites/scss/vendor/normalize';
-
 // Global variables and styles
 @import '../bower_components/foundation-sites/scss/global';
 
@@ -46,11 +41,6 @@ $foundation-version: '6.0.0-alpha.1';
   '../bower_components/foundation-sites/scss/components/top-bar',
   '../bower_components/foundation-sites/scss/components/thumbnail',
   '../bower_components/foundation-sites/scss/components/tooltip';
-
-// These styles are applied to <meta> tags, which are read by the Foundation JavaScript
-.foundation-mq {
-  font-family: "#{-zf-bp-serialize($breakpoints)}";
-}
 
 // These elements aren't styled with material design.
 // However, if you need them you can easily uncomment them
