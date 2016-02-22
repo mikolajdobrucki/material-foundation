@@ -37,13 +37,13 @@ label.checkbox:before {
   background-color: rgba($teal-500, 0);
 }
 label.checkbox.checked:before {
-  content: '\e8a6';
+  content: '\f26b';
   line-height: 18px;
   font-size: 14px;
   color: $grey-200;
   background-color: $teal-500;
   border: 0;
-  font-family: 'icomoon';
+  font-family: 'Material-Design-Iconic-Font';
 }
 
 // Radio inputs
