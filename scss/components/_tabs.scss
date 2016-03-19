@@ -3,7 +3,6 @@
 
 $tab-background: $primary-color;
 $tab-background-active: $primary-color;
-$tab-item-color: white;
 
 @include foundation-tabs;
 
@@ -11,6 +10,7 @@ $tab-item-color: white;
   border: 0;
   .tabs-title {
     a {
+      color: $white;
       @extend .text-button;
       padding-top: 1rem;
       margin-bottom: 0;
