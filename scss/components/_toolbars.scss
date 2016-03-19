@@ -23,6 +23,15 @@ $topbar-background: $primary-color;
     color: $white;
     font-weight: 500;
   }
+  .top-bar-left.no-collapse, .top-bar-right.no-collapse {
+    width: auto;
+  }
+  .top-bar-left.no-collapse {
+    float: left;
+  }
+  .top-bar-right.no-collapse {
+    float: right;
+  }
 }
 .menu > li > a {
   padding: 1rem;
