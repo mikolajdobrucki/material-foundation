@@ -20,9 +20,13 @@ header {
   }
   img {
     margin-bottom: -2px;
+    @include show-for(large);
   }
   .icon-link {
-    margin-right: 5px;
+    margin: {
+      right: 5px;
+      bottom: 50px;
+    }
   }
 }
 .download {
