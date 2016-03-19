@@ -7,7 +7,7 @@
   "ignore": [
   ],
   "dependencies": {
-    "foundation-sites": "~6.0.6",
+    "foundation-sites": "~6.2.0",
     "material-design-iconic-font": "~2.2.0"
   }
 }

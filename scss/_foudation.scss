@@ -1,71 +1,96 @@
-// Foundation for Sites by ZURB
-// foundation.zurb.com
-// Licensed under MIT Open Source
-
-// Global variables and styles
-@import '../bower_components/foundation-sites/scss/global';
+/**
+ * Foundation for Sites by ZURB
+ * Version 6.2.0
+ * foundation.zurb.com
+ * Licensed under MIT Open Source
+ */
 
 // Components
-@import
-  '../bower_components/foundation-sites/scss/grid/grid',
-  '../bower_components/foundation-sites/scss/typography/typography',
-  '../bower_components/foundation-sites/scss/forms/forms',
-  '../bower_components/foundation-sites/scss/components/visibility',
-  '../bower_components/foundation-sites/scss/components/float',
-  '../bower_components/foundation-sites/scss/components/button',
-  '../bower_components/foundation-sites/scss/components/button-group',
-  '../bower_components/foundation-sites/scss/components/accordion-menu',
-  '../bower_components/foundation-sites/scss/components/accordion',
-  '../bower_components/foundation-sites/scss/components/badge',
-  '../bower_components/foundation-sites/scss/components/breadcrumbs',
-  '../bower_components/foundation-sites/scss/components/callout',
-  '../bower_components/foundation-sites/scss/components/close-button',
-  '../bower_components/foundation-sites/scss/components/drilldown',
-  '../bower_components/foundation-sites/scss/components/dropdown-menu',
-  '../bower_components/foundation-sites/scss/components/dropdown',
-  '../bower_components/foundation-sites/scss/components/flex-video',
-  '../bower_components/foundation-sites/scss/components/label',
-  '../bower_components/foundation-sites/scss/components/media-object',
-  '../bower_components/foundation-sites/scss/components/menu',
-  '../bower_components/foundation-sites/scss/components/off-canvas',
-  '../bower_components/foundation-sites/scss/components/orbit',
-  '../bower_components/foundation-sites/scss/components/pagination',
-  '../bower_components/foundation-sites/scss/components/progress-bar',
-  '../bower_components/foundation-sites/scss/components/reveal',
-  '../bower_components/foundation-sites/scss/components/slider',
-  '../bower_components/foundation-sites/scss/components/sticky',
-  '../bower_components/foundation-sites/scss/components/switch',
-  '../bower_components/foundation-sites/scss/components/table',
-  '../bower_components/foundation-sites/scss/components/tabs',
-  '../bower_components/foundation-sites/scss/components/title-bar',
-  '../bower_components/foundation-sites/scss/components/top-bar',
-  '../bower_components/foundation-sites/scss/components/thumbnail',
-  '../bower_components/foundation-sites/scss/components/tooltip';
+@import '../bower_components/foundation-sites/scss/grid/grid';
+@import '../bower_components/foundation-sites/scss/typography/typography';
+@import '../bower_components/foundation-sites/scss/forms/forms';
+@import '../bower_components/foundation-sites/scss/components/visibility';
+@import '../bower_components/foundation-sites/scss/components/float';
+@import '../bower_components/foundation-sites/scss/components/button';
+@import '../bower_components/foundation-sites/scss/components/button-group';
+@import '../bower_components/foundation-sites/scss/components/accordion-menu';
+@import '../bower_components/foundation-sites/scss/components/accordion';
+@import '../bower_components/foundation-sites/scss/components/badge';
+@import '../bower_components/foundation-sites/scss/components/breadcrumbs';
+@import '../bower_components/foundation-sites/scss/components/callout';
+@import '../bower_components/foundation-sites/scss/components/close-button';
+@import '../bower_components/foundation-sites/scss/components/drilldown';
+@import '../bower_components/foundation-sites/scss/components/dropdown-menu';
+@import '../bower_components/foundation-sites/scss/components/dropdown';
+@import '../bower_components/foundation-sites/scss/components/flex';
+@import '../bower_components/foundation-sites/scss/components/flex-video';
+@import '../bower_components/foundation-sites/scss/components/label';
+@import '../bower_components/foundation-sites/scss/components/media-object';
+@import '../bower_components/foundation-sites/scss/components/menu';
+@import '../bower_components/foundation-sites/scss/components/menu-icon';
+@import '../bower_components/foundation-sites/scss/components/off-canvas';
+@import '../bower_components/foundation-sites/scss/components/orbit';
+@import '../bower_components/foundation-sites/scss/components/pagination';
+@import '../bower_components/foundation-sites/scss/components/progress-bar';
+@import '../bower_components/foundation-sites/scss/components/reveal';
+@import '../bower_components/foundation-sites/scss/components/slider';
+@import '../bower_components/foundation-sites/scss/components/sticky';
+@import '../bower_components/foundation-sites/scss/components/switch';
+@import '../bower_components/foundation-sites/scss/components/table';
+@import '../bower_components/foundation-sites/scss/components/tabs';
+@import '../bower_components/foundation-sites/scss/components/title-bar';
+@import '../bower_components/foundation-sites/scss/components/top-bar';
+@import '../bower_components/foundation-sites/scss/components/thumbnail';
+@import '../bower_components/foundation-sites/scss/components/tooltip';
 
-// These elements aren't styled with material design.
-// However, if you need them you can easily uncomment them
-@mixin foundation-everything {
-  // @include foundation-accordion;
-  // @include foundation-badge;
-  // @include foundation-breadcrumbs;
-  // @include foundation-callout;
-  // @include foundation-close-button;
-  // @include foundation-drilldown-menu;
-  // @include foundation-dropdown;
-  // @include foundation-dropdown-menu
-  // @include foundation-flex-video;
-  // @include foundation-label;
-  // @include foundation-media-object;
-  // @include foundation-off-canvas;
-  // @include foundation-orbit;
-  // @include foundation-pagination;
-  // @include foundation-progress-bar;
-  // @include foundation-slider;
-  // @include foundation-sticky;
-  // @include foundation-reveal;
-  // @include foundation-table;
-  // @include foundation-thumbnail;
-  // @include foundation-title-bar;
+@mixin foundation-everything($flex: false) {
+  @if $flex {
+    $global-flexbox: true !global;
+  }
+
+  @include foundation-global-styles;
+  @if not $flex {
+    @include foundation-grid;
+  }
+  @else {
+    @include foundation-flex-grid;
+  }
+  @include foundation-typography;
+  @include foundation-forms;
+  @include foundation-button;
+  @include foundation-accordion;
+  @include foundation-accordion-menu;
+  @include foundation-badge;
+  @include foundation-breadcrumbs;
+  @include foundation-button-group;
+  @include foundation-callout;
+  @include foundation-close-button;
+  @include foundation-menu;
+  @include foundation-menu-icon;
+  @include foundation-drilldown-menu;
+  @include foundation-dropdown;
+  @include foundation-dropdown-menu;
+  @include foundation-flex-video;
+  @include foundation-label;
+  @include foundation-media-object;
+  @include foundation-off-canvas;
+  @include foundation-orbit;
+  @include foundation-pagination;
+  @include foundation-progress-bar;
+  @include foundation-slider;
+  @include foundation-sticky;
+  @include foundation-reveal;
+  @include foundation-switch;
+  @include foundation-table;
+  @include foundation-tabs;
+  @include foundation-thumbnail;
+  @include foundation-title-bar;
+  @include foundation-tooltip;
+  @include foundation-top-bar;
+  @include foundation-visibility-classes;
+  @include foundation-float-classes;
+
+  @if $flex {
+    @include foundation-flex-classes;
+  }
 }
-
-@include foundation-everything;

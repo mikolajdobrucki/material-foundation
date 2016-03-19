@@ -4,6 +4,7 @@
 .bundle
 .config
 .sass-cache/*
+scss/.sass-cache/*
 *.css.map
 
 css/*.css

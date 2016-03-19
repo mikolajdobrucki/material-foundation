@@ -5,7 +5,7 @@ Material Foundation
 
 Material Design version of Foundation Framework by Zurb
 
-**Supported Foundation Version**: 6.0.6
+**Supported Foundation Version**: 6.2.0
 
 **Demo**: [http://eucalyptuss.github.io/material-foundation/](http://eucalyptuss.github.io/material-foundation/)
 
@@ -28,7 +28,7 @@ While you're working on your project, run:
 
 `grunt watch`
 
-or make grunt watch and compile all your CSS and javascript, or run:
+to make grunt watch and compile all your CSS and javascript, or run:
 
 `grunt`
 
