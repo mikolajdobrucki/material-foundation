@@ -41,11 +41,5 @@ scss/
 
   * `material-foundation.scss`: Main CSS file
   * `demo.scss`: CSS for the preview purposes, don't mind it
-  * `scss/_settings.scss`: here we're adjusting Foundation as far as possible to avoid unnecessary overwriting
-  * `_foundation-util.scss`: here Foundation's SASS utilities are imported
-  * `_foundation.scss`: the rest of original Foundation's code
-  * `scss/app.scss`: Application styles go here
-
-## Components ##
-
-Please note that not all the Foundation components are 'materialised'. By default, Material Foundation include only the styled ones. However if you want to use some of the other components all you must do is uncommenting them in : `_foundation.scss`.
+  * `scss/_global.scss`: global settings
+  * `_foundation.scss`: the rest of original Foundation's code is imported here
