@@ -160,24 +160,26 @@
     </div>
 
     <div class="row column">
-      <ul class="tabs" data-tabs id="material-tabs">
-        <li class="tabs-title is-active"><a href="#panel1" class="ink color">no. 1</a></li>
-        <li class="tabs-title"><a href="#panel2" class="ink ink-color">item two</a></li>
-        <li class="tabs-title"><a href="#panel3" class="ink ink-color">item third</a></li>
-        <li class="tabs-title"><a href="#panel4" class="ink ink-color">item fourth</a></li>
-      </ul>
-      <div class="tabs-content" data-tabs-content="material-tabs">
-        <div class="tabs-panel is-active" id="panel1">
-          <p>This is the first panel of the basic tab example. This is the first panel of the basic tab example.</p>
-        </div>
-        <div class="tabs-panel" id="panel2">
-          <p>This is the second panel of the basic tab example. This is the second panel of the basic tab example.</p>
-        </div>
-        <div class="tabs-panel" id="panel3">
-          <p>This is the third panel of the basic tab example. This is the third panel of the basic tab example.</p>
-        </div>
-        <div class="tabs-panel" id="panel4">
-          <p>This is the fourth panel of the basic tab example. This is the fourth panel of the basic tab example.</p>
+      <div class="z-depth-1">
+        <ul class="tabs" data-tabs id="material-tabs">
+          <li class="tabs-title is-active"><a href="#panel1" class="ink color">no. 1</a></li>
+          <li class="tabs-title"><a href="#panel2" class="ink ink-color">item two</a></li>
+          <li class="tabs-title"><a href="#panel3" class="ink ink-color">item third</a></li>
+          <li class="tabs-title"><a href="#panel4" class="ink ink-color">item fourth</a></li>
+        </ul>
+        <div class="tabs-content" data-tabs-content="material-tabs">
+          <div class="tabs-panel is-active" id="panel1">
+            <p>This is the first panel of the basic tab example. This is the first panel of the basic tab example.</p>
+          </div>
+          <div class="tabs-panel" id="panel2">
+            <p>This is the second panel of the basic tab example. This is the second panel of the basic tab example.</p>
+          </div>
+          <div class="tabs-panel" id="panel3">
+            <p>This is the third panel of the basic tab example. This is the third panel of the basic tab example.</p>
+          </div>
+          <div class="tabs-panel" id="panel4">
+            <p>This is the fourth panel of the basic tab example. This is the fourth panel of the basic tab example.</p>
+          </div>
         </div>
       </div>
     </div>
@@ -266,10 +268,89 @@
       <h2 id="tooltips" class="demo-headline">Tooltips</h2>
     </div>
 
-    <div class="row column tooltips">
+    <div class="row column">
       <span data-tooltip aria-haspopup="true" class="raised-button" title="Tooltips Text">
         button with a tooltip
       </span>
+    </div>
+
+    <hr>
+
+    <div class="row column">
+      <h2 id="tooltips" class="demo-headline">Chips</h2>
+    </div>
+
+    <div class="row column">
+      <span class="chip">Example Chip</span>
+      <span class="chip">Example Chip<i class="icon icon-close-circle"></i></span>
+      <span class="chip"><span class="badge">A</span><span>Example Chip<i class="icon icon-close-circle"></i></span></span>
+    </div>
+
+    <hr>
+
+    <div class="row column">
+      <h2 id="tooltips" class="demo-headline">Tables</h2>
+    </div>
+
+    <div class="row column">
+      <table>
+        <thead>
+          <tr>
+            <th width="200">
+              <input id="checkbox2" type="checkbox">
+              <label for="checkbox2" class="checkbox"></label>
+              Table header
+            </th>
+            <th>Table Header</th>
+            <th width="150">Table Header</th>
+            <th width="150">Table Header</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <input id="checkbox2" type="checkbox">
+              <label for="checkbox2" class="checkbox"></label>
+              Item
+            </td>
+            <td>This is longer content.</td>
+            <td>Content Goes Here</td>
+            <td>Content Goes Here</td>
+          </tr>
+          <tr>
+            <td>
+              <input id="checkbox2" type="checkbox">
+              <label for="checkbox2" class="checkbox"></label>
+              Item
+            </td>
+            <td>This is longer content.</td>
+            <td>Content Goes Here</td>
+            <td>Content Goes Here</td>
+          </tr>
+          <tr>
+            <td>
+              <input id="checkbox2" type="checkbox">
+              <label for="checkbox2" class="checkbox"></label>
+              Item
+            </td>
+            <td>This is longer content.</td>
+            <td>Content Goes Here</td>
+            <td>Content Goes Here</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <hr>
+
+    <div class="row column">
+      <h2 id="tooltips" class="demo-headline">Tables</h2>
+    </div>
+
+    <div class="row column">
+      <div class="progress" role="progressbar" tabindex="0" aria-valuenow="50" aria-valuemin="0" aria-valuetext="50 percent" aria-valuemax="100">
+        <div class="progress-meter" style="width: 50%"></div>
+      </div>
     </div>
 
     <script src="js/material-foundation.js"></script>
