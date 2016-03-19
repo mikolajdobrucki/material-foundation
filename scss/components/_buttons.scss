@@ -2,17 +2,15 @@
 // http://www.google.com/design/spec/components/buttons.html
 
 $button-background-hover: scale-color($button-background, $lightness: -5%);
+$button-padding: 0.85em 1em 0.7em 1em;
 
+@include foundation-button;
 @include foundation-button-group;
 @include foundation-dropdown;
 
 .raised-button, .raised-accent-button, .flat-button, .disabled-button {
   min-width: 64px;
   overflow: hidden;
-  padding: {
-    left: 1rem;
-    right: 1rem;
-  }
 }
 .raised-button, .raised-accent-button, .flat-button, .disabled-button {
   @extend .text-button;

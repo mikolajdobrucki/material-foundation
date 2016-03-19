@@ -15,10 +15,10 @@
 
     <header>
       <div class="row">
-        <div class="medium-4 columns">
+        <div class="large-4 columns">
           <img src="images/home-bg.svg" alt="Foundation Yeti" />
         </div>
-        <div class="medium-7 medium-offset-1 columns">
+        <div class="large-7 large-offset-1 columns">
           <h1>Material Foundation</h1>
           <h2>Material Design version of Foundation Framework by Zurb</h2>
           <a class="text-button" href="https://github.com/eucalyptuss/material-foundation" target="_blank">
@@ -202,20 +202,20 @@
     <hr>
 
     <div class="row column">
-      <h2 id="top-bars" class="demo-headline">Top Bars</h2>
+      <h2 id="top-bars" class="demo-headline">Toolbars</h2>
     </div>
 
     <div class="row column">
       <div class="top-bar">
-        <div class="top-bar-left">
-          <ul class="dropdown menu" data-dropdown-menu="" role="menubar">
-            <li role="menuitem" tabindex="0"><a href="#top-bars" class="dark" tabindex="-1"><i class="icon icon-menu icon-hc-lg"></i></a></li>
-            <li class="menu-text text-title" role="menuitem" tabindex="0">Site Title</li>
+        <div class="top-bar-left no-collapse">
+          <ul class="dropdown menu" data-dropdown-menu>
+            <li><a href="#top-bars" class="dark"><i class="icon icon-menu"></i></a></li>
+            <li class="menu-text text-title">Site Title</li>
           </ul>
         </div>
-        <div class="top-bar-right">
+        <div class="top-bar-right no-collapse">
           <ul class="menu">
-            <li role="menuitem" tabindex="0"><a href="#" tabindex="-1"><i class="icon icon-search icon-hc-lg"></i></a></li>
+            <li><a href="#"><i class="icon icon-search"></i></a></li>
           </ul>
         </div>
       </div>
@@ -239,7 +239,7 @@
       <h2 id="switches" class="demo-headline">Switches</h2>
     </div>
 
-    <div class="row">
+    <div class="row switches">
       <div class="medium-4 columns">
         <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed" class="radio">Radio 1</label>
         <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue" class="radio">Radio 2</label>
@@ -248,13 +248,11 @@
         <input id="checkbox1" type="checkbox"><label for="checkbox1" class="checkbox">Checkbox 1</label>
         <input id="checkbox2" type="checkbox"><label for="checkbox2" class="checkbox">Checkbox 2</label>
       </div>
-      <div class="medium-2 columns">
+      <div class="medium-4 columns">
         <div class="switch">
           <input class="switch-input" id="sampleSwitch" type="checkbox" name="sampleSwitch">
           <label class="switch-paddle" for="sampleSwitch"></label>
         </div>
-      </div>
-      <div class="medium-2 columns">
         <div class="switch">
           <input class="switch-input" id="sampleSwitch2" type="checkbox" name="sampleSwitch2">
           <label class="switch-paddle" for="sampleSwitch2"></label>
@@ -268,7 +266,7 @@
       <h2 id="tooltips" class="demo-headline">Tooltips</h2>
     </div>
 
-    <div class="row column">
+    <div class="row column tooltips">
       <span data-tooltip aria-haspopup="true" class="raised-button" title="Tooltips Text">
         button with a tooltip
       </span>

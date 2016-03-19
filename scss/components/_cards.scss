@@ -3,10 +3,11 @@
   @extend .z-depth-1;
   background: $white;
   .link-icon i {
-    margin-top: 7px;
+    margin-top: 13px;
   }
   .bottom-button {
-    margin-bottom: 0;
+    margin-left: -1em;
+    margin-bottom: -0.85em;
   }
   .text-caption {
     color: $black-26;

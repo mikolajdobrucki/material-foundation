@@ -20,9 +20,13 @@ header {
   }
   img {
     margin-bottom: -2px;
+    @include show-for(large);
   }
   .icon-link {
-    margin-right: 5px;
+    margin: {
+      right: 5px;
+      bottom: 50px;
+    }
   }
 }
 .download {
@@ -62,7 +66,19 @@ h2.demo-headline {
 .floating-action-button {
   margin-right: 15px;
 }
-
+.switch {
+  float: left;
+  margin: {
+    left: 10px;
+    right: 30px;
+  }
+}
+.switches .columns {
+  margin-bottom: 20px;
+}
+.tooltips {
+  padding-bottom: 50px;
+}
 #footer {
   background: white;
   text-align: center;
