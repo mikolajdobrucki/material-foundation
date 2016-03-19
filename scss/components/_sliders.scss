@@ -1,0 +1,20 @@
+// Reference:
+// http://www.google.com/design/spec/components/sliders.html
+
+$slider-handle-width: 12px;
+$slider-handle-height: 12px;
+$slider-height: 4px;
+$slider-radius: 50%;
+$slider-background: $black-12;
+$slider-fill-background: $primary-color;
+
+@include foundation-slider;
+
+.slider-handle {
+  &.is-dragging {
+    box-shadow: 0 0 0 6px $primary-color;
+  }
+  &:hover {
+    background-color: $primary-color;
+  }
+}
