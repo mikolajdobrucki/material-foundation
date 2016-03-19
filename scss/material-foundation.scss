@@ -2,13 +2,12 @@
 @import
   "style/color";
 
-// Foundation Utilities
-@import
-  "foudation-util";
+// Sass utilities
+@import '../bower_components/foundation-sites/scss/util/util';
 
-// Foundation Customisation
-@import
-  "settings";
+// Global variables and styles
+@import 'global';
+// @import 'settings';
 
 // Foundation Files
 @import
