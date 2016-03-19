@@ -1,0 +1,35 @@
+// Reference:
+// http://www.google.com/design/spec/components/chips.html
+
+@include foundation-badge;
+@include foundation-label;
+
+.chip {
+  @include label;
+  height: 3em;
+  line-height: 3em;
+  border-radius: 2em;
+  background: $black-12;
+  @extend .text-body-1;
+  padding: 0 0.7rem;
+  vertical-align: top;
+  i {
+    color: $black-26;
+    font-size: 150%;
+    vertical-align: middle;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  .badge {
+    width: 2em;
+    height: 2em;
+    line-height: 1.5em;
+    margin: 0 10px 0 -0.7rem;
+    font-size: 19px;
+  }
+  .badge + span {
+    display: inline-block;
+    margin-top: -8px;
+    vertical-align: middle;
+  }
+}

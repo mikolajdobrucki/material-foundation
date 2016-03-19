@@ -1,0 +1,8 @@
+// Reference:
+// http://www.google.com/design/spec/components/progress-activity.html
+
+$progress-radius: 0;
+$progress-height: 4px;
+$progress-background: rgba($progress-meter-background,.25);
+
+@include foundation-progress-bar;
