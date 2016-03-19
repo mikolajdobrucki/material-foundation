@@ -28,7 +28,7 @@ While you're working on your project, run:
 
 `grunt watch`
 
-or make grunt watch and compile all your CSS and javascript, or run:
+to make grunt watch and compile all your CSS and javascript, or run:
 
 `grunt`
 
