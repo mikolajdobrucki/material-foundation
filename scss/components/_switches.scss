@@ -81,6 +81,7 @@ label.radio.checked:after {
 
 // Switches
 .switch {
+  width: auto;
   margin-top: 3px;
   input + label {
     height: rem-calc(14);
