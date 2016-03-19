@@ -20,7 +20,8 @@ You'll need to have the following items installed before continuing.
 ## Quickstart
 
 ```bash
-git clone git@github.com:eucalyptuss/material-foundation.git
+git clone https://github.com/eucalyptuss/material-foundation.git
+cd material-foundation
 npm install && bower install
 ```
 
