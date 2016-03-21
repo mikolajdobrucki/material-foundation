@@ -312,3 +312,402 @@ $grey-600:  #757575;
 $grey-700:  #616161;
 $grey-800:  #424242;
 $grey-900:  #212121;
+
+
+
+// color mapping
+$red: (
+    "lighten-5": $red-50,
+    "lighten-4": $red-100,
+    "lighten-3": $red-200,
+    "lighten-2": $red-300,
+    "lighten-1": $red-400,
+    "base"     : $red-500,
+    "darken-1" : $red-600,
+    "darken-2" : $red-700,
+    "darken-3" : $red-800,
+    "darken-4" : $red-900,
+    "accent-1" : $red-A100,
+    "accent-2" : $red-A200,
+    "accent-3" : $red-A400,
+    "accent-4" : $red-A700
+);
+
+$pink: (
+    "lighten-5": $pink-50,
+    "lighten-4": $pink-100,
+    "lighten-3": $pink-200,
+    "lighten-2": $pink-300,
+    "lighten-1": $pink-400,
+    "base"     : $pink-500,
+    "darken-1" : $pink-600,
+    "darken-2" : $pink-700,
+    "darken-3" : $pink-800,
+    "darken-4" : $pink-900,
+    "accent-1" : $pink-A100,
+    "accent-2" : $pink-A200,
+    "accent-3" : $pink-A400,
+    "accent-4" : $pink-A700
+);
+
+$purple: (
+    "lighten-5": $purple-50,
+    "lighten-4": $purple-100,
+    "lighten-3": $purple-200,
+    "lighten-2": $purple-300,
+    "lighten-1": $purple-400,
+    "base"     : $purple-500,
+    "darken-1" : $purple-600,
+    "darken-2" : $purple-700,
+    "darken-3" : $purple-800,
+    "darken-4" : $purple-900,
+    "accent-1" : $purple-A100,
+    "accent-2" : $purple-A200,
+    "accent-3" : $purple-A400,
+    "accent-4" : $purple-A700
+);
+
+$deep-purple: (
+    "lighten-5": $deep-purple-50,
+    "lighten-4": $deep-purple-100,
+    "lighten-3": $deep-purple-200,
+    "lighten-2": $deep-purple-300,
+    "lighten-1": $deep-purple-400,
+    "base"     : $deep-purple-500,
+    "darken-1" : $deep-purple-600,
+    "darken-2" : $deep-purple-700,
+    "darken-3" : $deep-purple-800,
+    "darken-4" : $deep-purple-900,
+    "accent-1" : $deep-purple-A100,
+    "accent-2" : $deep-purple-A200,
+    "accent-3" : $deep-purple-A400,
+    "accent-4" : $deep-purple-A700
+);
+
+$indigo: (
+    "lighten-5": $indigo-50,
+    "lighten-4": $indigo-100,
+    "lighten-3": $indigo-200,
+    "lighten-2": $indigo-300,
+    "lighten-1": $indigo-400,
+    "base"     : $indigo-500,
+    "darken-1" : $indigo-600,
+    "darken-2" : $indigo-700,
+    "darken-3" : $indigo-800,
+    "darken-4" : $indigo-900,
+    "accent-1" : $indigo-A100,
+    "accent-2" : $indigo-A200,
+    "accent-3" : $indigo-A400,
+    "accent-4" : $indigo-A700
+);
+
+$blue: (
+    "lighten-5": $blue-50,
+    "lighten-4": $blue-100,
+    "lighten-3": $blue-200,
+    "lighten-2": $blue-300,
+    "lighten-1": $blue-400,
+    "base"     : $blue-500,
+    "darken-1" : $blue-600,
+    "darken-2" : $blue-700,
+    "darken-3" : $blue-800,
+    "darken-4" : $blue-900,
+    "accent-1" : $blue-A100,
+    "accent-2" : $blue-A200,
+    "accent-3" : $blue-A400,
+    "accent-4" : $blue-A700
+);
+
+$light-blue: (
+    "lighten-5": $light-blue-50,
+    "lighten-4": $light-blue-100,
+    "lighten-3": $light-blue-200,
+    "lighten-2": $light-blue-300,
+    "lighten-1": $light-blue-400,
+    "base"     : $light-blue-500,
+    "darken-1" : $light-blue-600,
+    "darken-2" : $light-blue-700,
+    "darken-3" : $light-blue-800,
+    "darken-4" : $light-blue-900,
+    "accent-1" : $light-blue-A100,
+    "accent-2" : $light-blue-A200,
+    "accent-3" : $light-blue-A400,
+    "accent-4" : $light-blue-A700
+);
+
+$cyan: (
+    "lighten-5": $cyan-50,
+    "lighten-4": $cyan-100,
+    "lighten-3": $cyan-200,
+    "lighten-2": $cyan-300,
+    "lighten-1": $cyan-400,
+    "base"     : $cyan-500,
+    "darken-1" : $cyan-600,
+    "darken-2" : $cyan-700,
+    "darken-3" : $cyan-800,
+    "darken-4" : $cyan-900,
+    "accent-1" : $cyan-A100,
+    "accent-2" : $cyan-A200,
+    "accent-3" : $cyan-A400,
+    "accent-4" : $cyan-A700
+);
+
+$teal: (
+    "lighten-5": $teal-50,
+    "lighten-4": $teal-100,
+    "lighten-3": $teal-200,
+    "lighten-2": $teal-300,
+    "lighten-1": $teal-400,
+    "base"     : $teal-500,
+    "darken-1" : $teal-600,
+    "darken-2" : $teal-700,
+    "darken-3" : $teal-800,
+    "darken-4" : $teal-900,
+    "accent-1" : $teal-A100,
+    "accent-2" : $teal-A200,
+    "accent-3" : $teal-A400,
+    "accent-4" : $teal-A700
+);
+
+$green: (
+    "lighten-5": $green-50,
+    "lighten-4": $green-100,
+    "lighten-3": $green-200,
+    "lighten-2": $green-300,
+    "lighten-1": $green-400,
+    "base"     : $green-500,
+    "darken-1" : $green-600,
+    "darken-2" : $green-700,
+    "darken-3" : $green-800,
+    "darken-4" : $green-900,
+    "accent-1" : $green-A100,
+    "accent-2" : $green-A200,
+    "accent-3" : $green-A400,
+    "accent-4" : $green-A700
+);
+
+$light-green: (
+    "lighten-5": $light-green-50,
+    "lighten-4": $light-green-100,
+    "lighten-3": $light-green-200,
+    "lighten-2": $light-green-300,
+    "lighten-1": $light-green-400,
+    "base"     : $light-green-500,
+    "darken-1" : $light-green-600,
+    "darken-2" : $light-green-700,
+    "darken-3" : $light-green-800,
+    "darken-4" : $light-green-900,
+    "accent-1" : $light-green-A100,
+    "accent-2" : $light-green-A200,
+    "accent-3" : $light-green-A400,
+    "accent-4" : $light-green-A700
+);
+
+$lime: (
+    "lighten-5": $lime-50,
+    "lighten-4": $lime-100,
+    "lighten-3": $lime-200,
+    "lighten-2": $lime-300,
+    "lighten-1": $lime-400,
+    "base"     : $lime-500,
+    "darken-1" : $lime-600,
+    "darken-2" : $lime-700,
+    "darken-3" : $lime-800,
+    "darken-4" : $lime-900,
+    "accent-1" : $lime-A100,
+    "accent-2" : $lime-A200,
+    "accent-3" : $lime-A400,
+    "accent-4" : $lime-A700
+);
+
+$yellow: (
+    "lighten-5": $yellow-50,
+    "lighten-4": $yellow-100,
+    "lighten-3": $yellow-200,
+    "lighten-2": $yellow-300,
+    "lighten-1": $yellow-400,
+    "base"     : $yellow-500,
+    "darken-1" : $yellow-600,
+    "darken-2" : $yellow-700,
+    "darken-3" : $yellow-800,
+    "darken-4" : $yellow-900,
+    "accent-1" : $yellow-A100,
+    "accent-2" : $yellow-A200,
+    "accent-3" : $yellow-A400,
+    "accent-4" : $yellow-A700
+);
+
+$amber: (
+    "lighten-5": $amber-50,
+    "lighten-4": $amber-100,
+    "lighten-3": $amber-200,
+    "lighten-2": $amber-300,
+    "lighten-1": $amber-400,
+    "base"     : $amber-500,
+    "darken-1" : $amber-600,
+    "darken-2" : $amber-700,
+    "darken-3" : $amber-800,
+    "darken-4" : $amber-900,
+    "accent-1" : $amber-A100,
+    "accent-2" : $amber-A200,
+    "accent-3" : $amber-A400,
+    "accent-4" : $amber-A700
+);
+
+$orange: (
+    "lighten-5": $orange-50,
+    "lighten-4": $orange-100,
+    "lighten-3": $orange-200,
+    "lighten-2": $orange-300,
+    "lighten-1": $orange-400,
+    "base"     : $orange-500,
+    "darken-1" : $orange-600,
+    "darken-2" : $orange-700,
+    "darken-3" : $orange-800,
+    "darken-4" : $orange-900,
+    "accent-1" : $orange-A100,
+    "accent-2" : $orange-A200,
+    "accent-3" : $orange-A400,
+    "accent-4" : $orange-A700
+);
+
+$deep-orange: (
+    "lighten-5": $deep-orange-50,
+    "lighten-4": $deep-orange-100,
+    "lighten-3": $deep-orange-200,
+    "lighten-2": $deep-orange-300,
+    "lighten-1": $deep-orange-400,
+    "base"     : $deep-orange-500,
+    "darken-1" : $deep-orange-600,
+    "darken-2" : $deep-orange-700,
+    "darken-3" : $deep-orange-800,
+    "darken-4" : $deep-orange-900,
+    "accent-1" : $deep-orange-A100,
+    "accent-2" : $deep-orange-A200,
+    "accent-3" : $deep-orange-A400,
+    "accent-4" : $deep-orange-A700
+);
+
+$brown: (
+    "lighten-5": $brown-50,
+    "lighten-4": $brown-100,
+    "lighten-3": $brown-200,
+    "lighten-2": $brown-300,
+    "lighten-1": $brown-400,
+    "base"     : $brown-500,
+    "darken-1" : $brown-600,
+    "darken-2" : $brown-700,
+    "darken-3" : $brown-800,
+    "darken-4" : $brown-900,
+);
+
+$blue-grey: (
+    "lighten-5": $blue-grey-50,
+    "lighten-4": $blue-grey-100,
+    "lighten-3": $blue-grey-200,
+    "lighten-2": $blue-grey-300,
+    "lighten-1": $blue-grey-400,
+    "base"     : $blue-grey-500,
+    "darken-1" : $blue-grey-600,
+    "darken-2" : $blue-grey-700,
+    "darken-3" : $blue-grey-800,
+    "darken-4" : $blue-grey-900,
+);
+
+$grey: (
+    "lighten-5": $grey-50,
+    "lighten-4": $grey-100,
+    "lighten-3": $grey-200,
+    "lighten-2": $grey-300,
+    "lighten-1": $grey-400,
+    "base"     : $grey-500,
+    "darken-1" : $grey-600,
+    "darken-2" : $grey-700,
+    "darken-3" : $grey-800,
+    "darken-4" : $grey-900,
+);
+
+$shades: (
+    "black"      : $black-100,
+    "black-87"   : $black-87,
+    "black-54"   : $black-54,
+    "black-26"   : $black-26,
+    "black-12"   : $black-12,
+    "black-06"   : $black-06,
+    "white"      : $white-100,
+    "white-87"   : $white-87,
+    "white-54"   : $white-54,
+    "transparent": transparent
+);
+
+// primary colors array
+$colors: (
+  "red": $red,
+  "pink": $pink,
+  "purple": $purple,
+  "deep-purple": $deep-purple,
+  "indigo": $indigo,
+  "blue": $blue,
+  "light-blue": $light-blue,
+  "cyan": $cyan,
+  "teal": $teal,
+  "green": $green,
+  "light-green": $light-green,
+  "lime": $lime,
+  "yellow": $yellow,
+  "amber": $amber,
+  "orange": $orange,
+  "deep-orange": $deep-orange,
+  "brown": $brown,
+  "blue-grey": $blue-grey,
+  "grey": $grey,
+  "shades": $shades
+);
+
+
+// make color classes for text and background
+@each $color_name, $color in $colors {
+  @each $color_type, $color_value in $color {
+    @if $color_type == "base" {
+      .#{$color_name} {
+        background-color: $color_value !important;
+      }
+      .text-#{$color_name} {
+        color: $color_value !important;
+      }
+    }
+    @else {
+      .#{$color_name}.#{$color_type} {
+        background-color: $color_value !important;
+      }
+      .text-#{$color_name}.text-#{$color_type} {
+        color: $color_value !important;
+      }
+    }
+  }
+}
+
+// Shade classes
+@each $color, $color_value in $shades {
+  .#{$color} {
+    background-color: $color_value !important;
+  }
+  .#{$color}-text {
+    color: $color_value !important;
+  }
+}
+
+
+// usage: color("name_of_color", "type_of_color")
+// to avoid to repeating map-get($colors, ...)
+
+@function color($color, $type) {
+  @if map-has-key($colors, $color) {
+    $curr_color: map-get($colors, $color);
+    @if map-has-key($curr_color, $type) {
+      @return map-get($curr_color, $type);
+    }
+  }
+  @warn "Unknown `#{name}` in $colors.";
+  @return null;
+}

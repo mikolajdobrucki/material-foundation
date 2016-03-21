@@ -85,3 +85,18 @@ h2.demo-headline {
   margin-top: 15px;
   padding-top: 15px;
 }
+p span.quote {
+  background-color: #ddd;
+  padding: 5px;
+  border-radius: 3px;
+}
+ul.demo-colors {
+  margin-left: 0;
+  .text-bold {
+    font-weight: bold; 
+  }
+  li {
+    list-style: none;
+    padding: 10px;
+  }
+}
