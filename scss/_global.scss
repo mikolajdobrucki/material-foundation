@@ -32,19 +32,19 @@ $foundation-palette: (
 
 /// Color used for light gray UI items.
 /// @type Color
-$light-gray: $grey-50;
+$light-gray: $grey-50 !default;
 
 /// Color used for medium gray UI items.
 /// @type Color
-$medium-gray: $grey-200;
+$medium-gray: $grey-200 !default;
 
 /// Color used for dark gray UI items.
 /// @type Color
-$dark-gray: $grey-500;
+$dark-gray: $grey-500 !default;
 
 /// Color used for black ui items.
 /// @type Color
-$black: $black-87;
+$black: $black-87 !default;
 
 /// Color used for white ui items.
 /// @type Color
@@ -52,15 +52,15 @@ $white: #fefefe !default;
 
 /// Background color of the body.
 /// @type Color
-$body-background: $grey-200;
+$body-background: $grey-200 !default;
 
 /// Text color of the body.
 /// @type Color
-$body-font-color: $black;
+$body-font-color: $black !default;
 
 /// Font stack of the body.
 /// @type List
-$body-font-family: Roboto, Noto, sans-serif;
+$body-font-family: Roboto, Noto, sans-serif !default;
 
 /// Set to `true` to enable antialiased type, using the `-webkit-font-smoothing` and `-moz-osx-font-smoothing` CSS properties.
 /// @type Boolean
@@ -76,19 +76,19 @@ $global-padding: 1rem !default;
 
 /// Global font weight used for light type.
 /// @type Keyword | Number
-$global-weight-light: 300;
+$global-weight-light: 300 !default;
 
 /// Global font weight used for normal type.
 /// @type Keyword | Number
-$global-weight-normal: 400;
+$global-weight-normal: 400 !default;
 
 /// Global font weight used for bold type.
 /// @type Keyword | Number
-$global-weight-bold: 500;
+$global-weight-bold: 500 !default;
 
 /// Global value used for all elements that have a border radius.
 /// @type Number
-$global-radius: 2px;
+$global-radius: 2px !default;
 
 /// Sets the text direction of the CSS. Can be either `ltr` or `rtl`.
 /// @type Keyword
@@ -98,7 +98,7 @@ $global-text-direction: ltr !default;
 /// @type Boolean
 $global-flexbox: false !default;
 
-$table-stripe: false;
+$table-stripe: false !default;
 
 @if not map-has-key($foundation-palette, primary) {
   @error 'In $foundation-palette, you must have a color named "primary".';
