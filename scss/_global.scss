@@ -98,8 +98,6 @@ $global-text-direction: ltr !default;
 /// @type Boolean
 $global-flexbox: false !default;
 
-$table-stripe: false !default;
-
 @if not map-has-key($foundation-palette, primary) {
   @error 'In $foundation-palette, you must have a color named "primary".';
 }

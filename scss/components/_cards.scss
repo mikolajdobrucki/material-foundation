@@ -1,4 +1,8 @@
-.card {
+$callout-border: 0;
+
+@include foundation-callout;
+
+.card, .callout {
   border-radius: $global-radius;
   @extend .z-depth-1;
   background: $white;
