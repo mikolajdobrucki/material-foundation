@@ -1,0 +1,7 @@
+$breadcrumbs-item-color-disabled: $grey-500;
+
+@include foundation-breadcrumbs;
+
+.breadcrumbs li:not(:last-child)::after {
+  color: $grey-500;
+}

@@ -79,6 +79,20 @@ h2.demo-headline {
 .tooltips {
   padding-bottom: 50px;
 }
+.kitchen-sink {
+  p, fieldset {
+    margin-top: 1rem;
+  }
+  hr {
+    margin-bottom: 30px;
+  }
+  .small-6, .medium-6 {
+    background: $grey-300;
+    &:nth-child(2) {
+        background: $grey-400;
+    }
+  }
+}
 #footer {
   background: white;
   text-align: center;

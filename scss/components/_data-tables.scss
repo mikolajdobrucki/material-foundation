@@ -5,6 +5,7 @@ $table-stripe: false;
 $table-head-background: $white;
 $table-border: 0;
 $table-padding: rem-calc(15);
+$table-stripe: false;
 
 @include foundation-table;
 
