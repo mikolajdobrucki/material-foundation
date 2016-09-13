@@ -5,7 +5,7 @@ Material Foundation
 
 Material Design version of Foundation for Sites by Zurb
 
-**Supported Foundation Version**: 6.2.0
+**Supported Foundation Version**: 6.2.3
 
 **Demo**: [http://eucalyptuss.github.io/material-foundation/](http://eucalyptuss.github.io/material-foundation/)
 
@@ -58,4 +58,4 @@ To use Material Foundation with an existing Foundation project you can simply re
 
 However, due to the differences between Foundation and Material Design Guidelines, some of the Material Foundation components are not based on the original Foundation's markup. To use them in your project you have to use the Material Foundation specific classes, e.g. `floating-action-button` to use a Floating Action Button.
 
-To view how the original Foundation components behave with the Material Foundation styles check the [Kitchen Sink]((http://eucalyptuss.github.io/material-foundation/kitchen-sink.html)) on the Material Design website. 
+To view how the original Foundation components behave with the Material Foundation styles check the [Kitchen Sink]((http://eucalyptuss.github.io/material-foundation/kitchen-sink.html)) on the Material Foundation website.
