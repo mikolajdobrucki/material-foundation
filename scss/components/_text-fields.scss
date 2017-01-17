@@ -34,7 +34,7 @@ input[type="text"], input[type="password"], input[type="date"], input[type="date
     height: 0;
     cursor: text;
   }
-  &.with-floating-label:focus, &.with-floating-label:valid, &.with-floating-label:invalid {
+  &.with-floating-label:focus, &.with-floating-label:valid, &.with-floating-label:invalid:not(:placeholder-shown) {
     & + label.floating-label {
       color: $primary-color;
       font-size: rem-calc(12);
