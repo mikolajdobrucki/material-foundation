@@ -5,6 +5,8 @@ Material Foundation
 
 Material Design version of Foundation for Sites by Zurb
 
+[![npm version](https://badge.fury.io/js/materialfoundation.svg)](https://badge.fury.io/js/materialfoundation)
+
 **Supported Foundation Version**: 6.4.1
 
 **Demo**: [http://eucalyptuss.github.io/material-foundation/](http://eucalyptuss.github.io/material-foundation/)
