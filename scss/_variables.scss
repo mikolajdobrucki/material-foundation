@@ -7,6 +7,7 @@ $foundation-palette: (
   success: $green-500,
   warning: $amber-500,
   alert: $red-500,
+  general: $grey-900,
 );
 
 $light-gray: $grey-50;
@@ -26,3 +27,6 @@ $global-weight-normal: 400;
 $global-weight-bold: 500;
 
 $global-radius: 2px;
+
+$button-padding: .7em 1em;
+$button-hollow-hover-lightness: 0;

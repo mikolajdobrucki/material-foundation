@@ -1,36 +1,19 @@
 // Reference:
 // http://www.google.com/design/spec/components/buttons.html
 
-$button-background-hover: scale-color($button-background, $lightness: -5%);
-$button-padding: 0.85em 1em 0.7em 1em;
-
-@include foundation-button;
-@include foundation-button-group;
-@include foundation-dropdown;
-
-.raised-button, .raised-accent-button, .flat-button, .disabled-button {
+.button {
   min-width: 64px;
   overflow: hidden;
-}
-.raised-button, .raised-accent-button, .flat-button, .disabled-button {
   @extend .text-button;
-}
-.raised-button, .floating-action-button {
-  @include button;
-}
-.raised-accent-button, .floating-action-accent-button {
-  @include button($background: $secondary-color, $background-hover: scale-color($secondary-color, $lightness: -5%), $color: $black-87);
-  &,&:hover {
-    color: $black-87;
-  }
-}
-.raised-button, .floating-action-button, .raised-accent-button, .floating-action-accent-button {
+  padding: $button-padding;
   @extend .z-depth-1;
+  position: relative;
+  border: 0;
   &:active {
     @extend .z-depth-2;
   }
 }
-.floating-action-button, .floating-action-accent-button {
+.floating-action.button {
   overflow: hidden;
   width: 56px;
   height: 56px;
@@ -42,18 +25,27 @@ $button-padding: 0.85em 1em 0.7em 1em;
     text-align: center;
   }
 }
-.floating-action-button i {
-  color: white;
+.hollow.button {
+  background: $white;
+  border: 0 !important;
+  &:hover {
+    background: $grey-100;
+  }
 }
-.floating-action-accent-button i {
-  color: $black-87;
+.flat.button {
+  box-shadow: none;
+  @each $name, $color in $button-palette {
+    &.#{$name} {
+      @include button-style(
+        $background: rgba($color,0),
+        $background-hover: rgba($color,.2),
+        $color: $color
+      );
+    }
+  }
 }
-.flat-button {
-  @include button($background: transparent, $background-hover: rgba(#999, .2), $color: $primary-color);
-  &,&:hover { color: $primary-color; }
-}
-.disabled-button {
-  @include button($background: transparent, $background-hover: transparent, $color: $black-26);
-  &,&:hover { color: $black-26; }
+.disabled.button {
+  @include button($background: transparent, $background-hover: transparent, $color: $black);
+  box-shadow: none;
   cursor: not-allowed !important;
 }
