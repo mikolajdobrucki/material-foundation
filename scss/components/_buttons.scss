@@ -2,15 +2,17 @@
 // http://www.google.com/design/spec/components/buttons.html
 
 .button {
-  min-width: 64px;
   overflow: hidden;
   @extend .text-button;
   padding: $button-padding;
-  @extend .z-depth-1;
   position: relative;
   border: 0;
-  &:active {
-    @extend .z-depth-2;
+  &:not(.floating-action) {
+    min-width: 64px;
+    @extend .z-depth-1;
+    &:active {
+      @extend .z-depth-2;
+    }
   }
 }
 .floating-action.button {
@@ -23,6 +25,10 @@
   i {
     font-size: 24px;
     text-align: center;
+  }
+  @extend .z-depth-2;
+  &:active {
+    @extend .z-depth-3;
   }
 }
 .hollow.button {
