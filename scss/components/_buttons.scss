@@ -8,7 +8,6 @@
   position: relative;
   border: 0;
   &:not(.floating-action) {
-    min-width: 64px;
     @extend .z-depth-1;
     &:active {
       @extend .z-depth-2;
