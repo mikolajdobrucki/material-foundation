@@ -25,6 +25,8 @@ input[type="text"], input[type="password"], input[type="date"], input[type="date
     position: relative; top: 1px;
     background: transparent;
   }
+}
+input {
   &.with-floating-label + label.floating-label {
     font-size: rem-calc(16);
     color: $black-26;
