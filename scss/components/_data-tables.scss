@@ -1,14 +1,6 @@
 // Reference:
 // http://www.google.com/design/spec/components/data-tables.html
 
-$table-stripe: false;
-$table-head-background: $white;
-$table-border: 0;
-$table-padding: rem-calc(15);
-$table-stripe: false;
-
-@include foundation-table;
-
 table {
   border-radius: $global-radius;
   @extend .z-depth-1;
@@ -17,18 +9,18 @@ table {
     position: relative;
     top: -11px;
   }
-}
-thead, tr {
-  border-bottom: 1px solid $grey-300;
-}
-thead tr {
-  @extend .text-body-2;
-  color: $black-54;
-}
-tr {
-  @extend .text-body-1;
-  color: $black-87;
-  &:last-child {
-    border-bottom: 0;
+  thead, tr {
+    border-bottom: 1px solid $grey-300;
+  }
+  thead tr {
+    @extend .text-body-2;
+    color: $black-54;
+  }
+  tr {
+    @extend .text-body-1;
+    color: $black-87;
+    &:last-child {
+      border-bottom: 0;
+    }
   }
 }

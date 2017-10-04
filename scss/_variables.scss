@@ -34,3 +34,9 @@ $button-hollow-hover-lightness: 0;
 $callout-border: 0;
 
 $topbar-background: map-get($foundation-palette, primary);
+
+$table-stripe: false;
+$table-head-background: $white;
+$table-border: 0;
+$table-padding: rem-calc(15);
+$table-stripe: false;
