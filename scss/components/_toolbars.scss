@@ -1,20 +1,12 @@
 // Reference:
 // http://www.google.com/design/spec/components/toolbars.html
 
-$topbar-padding: 0;
-$topbar-background: $primary-color;
-
-@include foundation-top-bar;
-@include foundation-menu;
-
 .top-bar {
-  height: 3.5rem;
+  height: rem-calc(56);
+  line-height: rem-calc(32);
   @extend .z-depth-1;
   a {
-    color: white;
-  }
-  i {
-    margin-top: -3px;
+    color: $white;
   }
   .dark {
     color: $black-54;
@@ -22,15 +14,7 @@ $topbar-background: $primary-color;
   .text-title {
     color: $white;
     font-weight: 500;
-  }
-  .top-bar-left.no-collapse, .top-bar-right.no-collapse {
-    width: auto;
-  }
-  .top-bar-left.no-collapse {
-    float: left;
-  }
-  .top-bar-right.no-collapse {
-    float: right;
+    line-height: inherit;
   }
 }
 .menu > li > a {
