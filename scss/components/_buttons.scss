@@ -38,7 +38,9 @@
   }
 }
 .flat.button {
-  box-shadow: none;
+  &,&:active {
+    box-shadow: none;
+  }
   @each $name, $color in $button-palette {
     &.#{$name} {
       @include button-style(
