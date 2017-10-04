@@ -1,7 +1,7 @@
 Material Foundation
 ===================
 
-![Material Foundation](https://github.com/eucalyptuss/material-foundation/raw/master/images/cover.png?raw=true)
+![Material Foundation](http://eucalyptuss.github.io/material-foundation/images/cover.png)
 
 Material Design version of Foundation for Sites by Zurb
 
