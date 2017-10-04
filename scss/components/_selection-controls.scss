@@ -34,14 +34,14 @@ label.checkbox:before, label.radio:before {
 label.checkbox:before {
   border: 2px solid $black-54;
   border-radius: $global-radius;
-  background-color: rgba($teal-500, 0);
+  background-color: rgba(map-get($foundation-palette, primary), 0);
 }
 label.checkbox.checked:before {
   content: '\f26b';
   line-height: 18px;
   font-size: 14px;
   color: $grey-200;
-  background-color: $teal-500;
+  background-color: map-get($foundation-palette, primary);
   border: 0;
   font-family: 'Material-Design-Iconic-Font';
 }
@@ -50,7 +50,7 @@ label.checkbox.checked:before {
 label.radio:before {
   width: 10px;
   height: 10px;
-  background: $teal-500;
+  background: map-get($foundation-palette, primary);
   border-radius: 50%;
   position: absolute;
   top: 4px;
@@ -76,7 +76,7 @@ label.radio:after {
   border: 2px solid $black-54;
 }
 label.radio.checked:after {
-  border-color: $teal-500;
+  border-color: map-get($foundation-palette, primary);
 }
 
 // Switches
@@ -98,7 +98,7 @@ label.radio.checked:after {
     width: 1.25rem;
   }
   input:checked + label:after {
-    background: $teal-500;
+    background: map-get($foundation-palette, primary);
     left: 1.1rem;
   }
 }
