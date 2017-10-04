@@ -9,6 +9,8 @@ $tab-background-active: $primary-color;
 .tabs {
   border: 0;
   .tabs-title {
+    overflow: hidden;
+    position: relative;
     a {
       color: $white;
       @extend .text-button;
@@ -20,6 +22,9 @@ $tab-background-active: $primary-color;
     }
     & > a:hover {
       background: scale-color($primary-color, $lightness: -5%);
+    }
+    .ripple-effect {
+      background-color: map-get($foundation-palette, secondary);
     }
   }
 }
