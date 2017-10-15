@@ -8,7 +8,6 @@
 
 
     $('.ripple, .button, .tabs-title').on('click', function (event) {
-      event.preventDefault();
 
       var $div = $('<div/>'),
           btnOffset = $(this).offset(),
