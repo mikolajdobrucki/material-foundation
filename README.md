@@ -1,7 +1,7 @@
 Material Foundation
 ===================
 
-![Material Foundation](http://eucalyptuss.github.io/material-foundation/images/cover.png)
+![Material Foundation](http://materialfoundation.mikolajdobrucki.com/assets/img/cover.png)
 
 Material Design version of Foundation for Sites by Zurb
 
@@ -9,7 +9,7 @@ Material Design version of Foundation for Sites by Zurb
 
 **Supported Foundation Version**: 6.4.3
 
-**Demo**: [http://eucalyptuss.github.io/material-foundation/](http://eucalyptuss.github.io/material-foundation/)
+**Demo**: [http://materialfoundation.mikolajdobrucki.com/](http://materialfoundation.mikolajdobrucki.com/)
 
 
 ## Quickstart
