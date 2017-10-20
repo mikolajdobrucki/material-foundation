@@ -28,4 +28,4 @@ Basically, all you need to do to start using Material Foundation is:
 * import `*.scss` files from `scss` folder to your stylesheet
 * include `*.js` files from `js` folder on your website
 
-Too see in what order should you import the files and how to do this check out the **[Material Foundation Starter Project](http://github.com/eucalyptuss/material-foundation-sample)**.
+Too see how to import the files check out the **[Material Foundation Starter Project](http://github.com/eucalyptuss/material-foundation-sample)**.
