@@ -3,8 +3,8 @@
 $.fn._toggleInput = function () {
   $(this).click(function () {
     $(this).toggleClass('checked');
-    $(this).siblings('label.radio').removeClass('checked');
+    $(this).siblings('.radio + label').removeClass('checked');
   });
 };
 
-$('label.radio, label.checkbox')._toggleInput();
+$('.radio + label, .checkbox + label')._toggleInput();

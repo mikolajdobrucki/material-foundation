@@ -4,12 +4,12 @@
 @include foundation-switch;
 
 // Radio and checkbox inputs
-input[type="checkbox"], input[type="radio"] {
+input.checkbox, input.radio {
   display: none;
   cursor: pointer;
   transition: all .4s ease-in-out;
 }
-label.radio, label.checkbox {
+input.checkbox + label, input.radio + label {
   display: inline-block;
   line-height: 18px;
   position: relative;
@@ -24,19 +24,15 @@ label.radio, label.checkbox {
     position: absolute;
     left: 0;
     top: -1px;
+    transition: all .2s ease-in-out;
   }
 }
-
-// Checkbox inputs
-label.checkbox:before, label.radio:before {
-  transition: all .2s ease-in-out;
-}
-label.checkbox:before {
+input.checkbox + label:before {
   border: 2px solid $black-54;
   border-radius: $global-radius;
   background-color: rgba(map-get($foundation-palette, primary), 0);
 }
-label.checkbox.checked:before {
+input.checkbox + label.checked:before {
   content: '\f26b';
   line-height: 18px;
   font-size: 14px;
@@ -47,7 +43,7 @@ label.checkbox.checked:before {
 }
 
 // Radio inputs
-label.radio:before {
+input.radio + label:before {
   width: 10px;
   height: 10px;
   background: map-get($foundation-palette, primary);
@@ -58,14 +54,14 @@ label.radio:before {
   transform: scale(0.1);
   opacity: 0;
 }
-label.radio.checked:before {
+input.radio + label.checked:before {
   opacity: 1;
   transform: scale(1);
 }
-label.radio:before, label.radio:after {
+input.radio + label:before, input.radio + label:after {
   border-radius: 10px;
 }
-label.radio:after {
+input.radio + label:after {
   content: "";
   display: inline-block;
   width: 20px;
@@ -75,7 +71,7 @@ label.radio:after {
   top: -1px;
   border: 2px solid $black-54;
 }
-label.radio.checked:after {
+input.radio + label.checked:after {
   border-color: map-get($foundation-palette, primary);
 }
 
