@@ -1,5 +1,5 @@
-Material Foundation
-===================
+# Material Foundation
+
 
 ![Material Foundation](http://materialfoundation.mikolajdobrucki.com/assets/img/cover.png)
 
@@ -9,9 +9,23 @@ Material Design version of Foundation for Sites by Zurb
 
 **Supported Foundation Version**: 6.4.3
 
-**Demo**: [http://materialfoundation.mikolajdobrucki.com/](http://materialfoundation.mikolajdobrucki.com/)
+**Docs**: [http://materialfoundation.mikolajdobrucki.com/](http://materialfoundation.mikolajdobrucki.com/)
+
+**Starter Project**:
+[https://github.com/eucalyptuss/material-foundation-sample](http://github.com/eucalyptuss/material-foundation-sample)
 
 
-## Quickstart
+## Install with npm
 
-Check out a [Sample Project](https://github.com/eucalyptuss/material-foundation-sample) to see an exemplary Material Foundation implementation based on a [Foundation Basic Template](https://foundation.zurb.com/sites/docs/starter-projects.html#basic-template)
+```bash
+npm install materialfoundation
+```
+
+## Quick Start
+
+Basically, all you need to do to start using Material Foundation is:
+
+* import `*.scss` files from `scss` folder to your stylesheet
+* include `*.js` files from `js` folder on your website
+
+Too see in what order should you import the files and how to do this check out the [Material Foundation Start Project](http://github.com/eucalyptuss/material-foundation-sample).
