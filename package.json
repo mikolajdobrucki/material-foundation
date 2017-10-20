@@ -1,7 +1,7 @@
 {
   "name": "materialfoundation",
   "description": "Material Design version of Foundation Framework by Zurb",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "homepage": "http://eucalyptuss.github.io/material-foundation/",
   "author": "Mikolaj Dobrucki",
   "main": "./js/src",
